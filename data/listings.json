@@ -1,0 +1,29 @@
+[
+  {
+    "job_id": "careem-sr-backend-eng-001",
+    "company": "Careem",
+    "role": "Senior Backend Engineer - Core Services",
+    "location": "Dubai, UAE",
+    "apply_url": "https://www.careem.com/careers/job/careem-sr-backend-eng-001",
+    "date_posted": "2026-10-25",
+    "source": "manual"
+  },
+  {
+    "job_id": "sarwa-staff-ml-eng-002",
+    "company": "Sarwa",
+    "role": "Staff Machine Learning Engineer - WealthTech",
+    "location": "DIFC, Dubai, UAE",
+    "apply_url": "https://www.sarwa.co/careers/job/sarwa-staff-ml-eng-002",
+    "date_posted": "2026-10-24",
+    "source": "manual"
+  },
+  {
+    "job_id": "kitopi-lead-data-scientist-003",
+    "company": "Kitopi",
+    "role": "Lead Data Scientist - Kitchen Intelligence",
+    "location": "Dubai Internet City, UAE",
+    "apply_url": "https://careers.kitopi.com/job/kitopi-lead-data-scientist-003",
+    "date_posted": "2026-10-23",
+    "source": "manual"
+  }
+]
