@@ -72,12 +72,16 @@ def _escape_cell(text: Optional[str]) -> str:
     return clean
 
 
-def generate_markdown_table(jobs: List[Dict[str, Any]]) -> str:
+def generate_markdown_table(
+    jobs: List[Dict[str, Any]], include_category: bool = False
+) -> str:
     """Generate Markdown rows corresponding to:
 
-    | Company | Role | Location | Apply Link | Date Posted |
+    | Company | Role | [Discipline |] Location | Apply Link | Date Posted |
     """
     if not jobs:
+        if include_category:
+            return "| *No active roles currently listed* | - | - | - | - | - |"
         return "| *No active roles currently listed* | - | - | - | - |"
 
     rows: List[str] = []
@@ -85,6 +89,7 @@ def generate_markdown_table(jobs: List[Dict[str, Any]]) -> str:
         company = _escape_cell(job.get("company", "Unknown"))
         role = _escape_cell(job.get("role", "Open Position"))
         location = _escape_cell(job.get("location", "Dubai, UAE"))
+        category = _escape_cell(job.get("category", "Software Engineering"))
         apply_url = str(job.get("apply_url") or "").strip()
         date_posted = _escape_cell(job.get("date_posted", "-"))
 
@@ -93,7 +98,10 @@ def generate_markdown_table(jobs: List[Dict[str, Any]]) -> str:
         else:
             apply_link = "Apply"
 
-        row = f"| **{company}** | {role} | {location} | {apply_link} | {date_posted} |"
+        if include_category:
+            row = f"| **{company}** | {role} | `{category}` | {location} | {apply_link} | {date_posted} |"
+        else:
+            row = f"| **{company}** | {role} | {location} | {apply_link} | {date_posted} |"
         rows.append(row)
 
     return "\n".join(rows)
@@ -103,6 +111,7 @@ def build_readme(
     template_path: str = "templates/README.template.md",
     data_path: str = "data/listings.json",
     output_path: str = "README.md",
+    include_category: Optional[bool] = None,
 ) -> str:
     """Parse listings, sort and deduplicate, render README template, and save to output."""
     if not os.path.exists(template_path):
@@ -117,7 +126,15 @@ def build_readme(
     # Also persist deduplicated and sorted data back to listings.json
     save_listings(cleaned_jobs, data_path)
 
-    table_rows = generate_markdown_table(cleaned_jobs)
+    # Auto-detect whether template table header has Discipline/Category column
+    if include_category is None:
+        has_discipline = bool(
+            "| Discipline |" in template_content or "| Category |" in template_content
+        )
+    else:
+        has_discipline = include_category
+
+    table_rows = generate_markdown_table(cleaned_jobs, include_category=has_discipline)
     total_roles = str(len(cleaned_jobs))
     last_updated = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
 
@@ -135,3 +152,4 @@ def build_readme(
 
     logger.info("README built successfully with %s roles at %s", total_roles, output_path)
     return rendered
+

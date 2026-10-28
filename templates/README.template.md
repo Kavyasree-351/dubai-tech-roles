@@ -7,12 +7,17 @@
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
 [![Active Roles](https://img.shields.io/badge/Active_Roles-{{TOTAL_ROLES}}-blue?style=flat-square&logo=target)](data/listings.json)
+[![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-{{LAST_UPDATED}}-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
-[**🔥 View Open Roles**](#-open-tech-roles-in-the-uae-updated-daily) • [**🔄 Daily Sync Architecture**](#-how-daily-updates-work) • [**🎯 Filtering Methodology**](#-filtering-methodology) • [**🤝 Contributing**](#-contributing)
+[**🔥 View Open Roles**](#-open-tech-roles-in-the-uae-updated-daily) • [**🎓 Internships & Early Grads**](INTERNSHIPS.md) • [**🔄 Daily Sync Architecture**](#-how-daily-updates-work) • [**🎯 Filtering Methodology**](#-filtering-methodology) • [**🤝 Contributing**](#-contributing)
 
 </div>
+
+---
+
+> 🎓 **Looking for student internships or fresh graduate schemes?** Check out our dedicated [**UAE Tech Internships & Early Careers Directory**](INTERNSHIPS.md) tracking verified SWE, AI, Data Science, and Quantitative trading internships!
 
 ---
 

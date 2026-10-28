@@ -20,6 +20,7 @@ EXCLUSION_TERMS: List[str] = [
 # Target technical engineering and scientific job title patterns
 TARGET_ROLE_PATTERNS: List[str] = [
     r"\bsoftware engineer\b",
+    r"\bsoftware engineering\b",
     r"\bsoftware developer\b",
     r"\bswe\b",
     r"\bbackend\b",
@@ -35,6 +36,8 @@ TARGET_ROLE_PATTERNS: List[str] = [
     r"\bml engineer\b",
     r"\bmlops\b",
     r"\bai engineer\b",
+    r"\bai research\b",
+    r"\bai researcher\b",
     r"\bartificial intelligence\b",
     r"\bgenai\b",
     r"\bgenerative ai\b",
@@ -42,8 +45,13 @@ TARGET_ROLE_PATTERNS: List[str] = [
     r"\bdata science\b",
     r"\bdata engineer\b",
     r"\bdata engineering\b",
+    r"\bdata analyst\b",
+    r"\bdata analytics\b",
     r"\bquant\b",
     r"\bquantitative\b",
+    r"\balgo trader\b",
+    r"\balgorithmic trading\b",
+    r"\btrading\b",
     r"\bdevops\b",
     r"\bplatform engineer\b",
     r"\bsite reliability engineer\b",
@@ -57,6 +65,51 @@ TARGET_ROLE_PATTERNS: List[str] = [
     r"\btech lead\b",
     r"\bengineering manager\b",
     r"\barchitect\b",
+    r"\btechnology intern\b",
+    r"\btech intern\b",
+]
+
+# Patterns explicitly matching student, intern, and early-graduate opportunities
+INTERNSHIP_ROLE_PATTERNS: List[str] = [
+    r"\bintern\b",
+    r"\binternship\b",
+    r"\binternships\b",
+    r"\binterns\b",
+    r"\bgraduate\b",
+    r"\bgraduates\b",
+    r"\bnew grad\b",
+    r"\bnew graduate\b",
+    r"\brecent graduate\b",
+    r"\bfresh graduate\b",
+    r"\bearly graduate\b",
+    r"\bearly career\b",
+    r"\bearly careers\b",
+    r"\btrainee\b",
+    r"\btraineeship\b",
+    r"\bapprentice\b",
+    r"\bapprenticeship\b",
+    r"\bfellowship\b",
+    r"\baccelerator program\b",
+    r"\baccelerator\b",
+    r"\bco-op\b",
+    r"\bcoop\b",
+    r"\bcampus\b",
+    r"\bjunior\b",
+    r"\bentry level\b",
+    r"\bentry-level\b",
+]
+
+# Senior / executive exclusion patterns for early career filtering
+SENIOR_EXCLUSION_PATTERNS: List[str] = [
+    r"\bsenior\b",
+    r"\bsr\.\b",
+    r"\bsr\b",
+    r"\blead\b",
+    r"\bprincipal\b",
+    r"\bstaff\b",
+    r"\bdirector\b",
+    r"\bhead of\b",
+    r"\bvp\b",
 ]
 
 # UAE and regional location patterns
@@ -185,3 +238,136 @@ def filter_job(job: Dict[str, Any]) -> bool:
         return False
 
     return True
+
+
+def matches_internship_or_early_grad_role(
+    title: Optional[str], description: Optional[str] = None
+) -> bool:
+    """Verify if a position is tailored for interns, trainees, students, or early graduates.
+
+    Args:
+        title: Job title string.
+        description: Optional job description text.
+
+    Returns:
+        bool: True if position is an internship or early graduate role, False otherwise.
+    """
+    if not title:
+        return False
+
+    title_lower = title.lower()
+
+    # Reject if clear senior/lead/staff/director role without junior indicators
+    has_junior_indicator = any(
+        re.search(w, title_lower, re.IGNORECASE)
+        for w in [r"\bjunior\b", r"\bintern\b", r"\btrainee\b", r"\bapprentice\b", r"\bentry[- ]level\b"]
+    )
+    if not has_junior_indicator:
+        for sen in SENIOR_EXCLUSION_PATTERNS:
+            if re.search(sen, title_lower, re.IGNORECASE):
+                return False
+
+    # Check title for internship/early career patterns
+    for pattern in INTERNSHIP_ROLE_PATTERNS:
+        if re.search(pattern, title_lower, re.IGNORECASE):
+            return True
+
+    # Check description for structured cohort keywords if title is generic
+    if description:
+        desc_lower = description.lower()
+        if any(
+            term in desc_lower
+            for term in [
+                "internship program",
+                "graduate scheme",
+                "graduate programme",
+                "early career program",
+                "university internship",
+            ]
+        ):
+            return True
+
+    return False
+
+
+def categorize_tech_role(title: Optional[str]) -> str:
+    """Assign a normalized technology discipline category to a job title.
+
+    Disciplines:
+    1. Software Engineering
+    2. AI & Machine Learning
+    3. Data Science & Engineering
+    4. Quantitative Finance
+    """
+    if not title:
+        return "Software Engineering"
+
+    t = title.lower()
+
+    # Quantitative Finance & Trading
+    if any(k in t for k in ["quant", "quantitative", "trader", "trading", "algorithmic"]):
+        return "Quantitative Finance"
+
+    # AI & Machine Learning
+    if any(k in t for k in ["ai ", "ai-", "(ai", "machine learning", "ml ", "mlops", "genai", "generative ai", "deep learning", "llm"]):
+        return "AI & Machine Learning"
+
+    # Data Science & Data Engineering
+    if any(k in t for k in ["data scientist", "data science", "data engineer", "data engineering", "data analyst", "analytics"]):
+        return "Data Science & Engineering"
+
+    # Default to Software Engineering (Backend, Frontend, Full Stack, Systems, Platform, DevOps, SRE)
+    return "Software Engineering"
+
+
+def filter_internship_job(job: Dict[str, Any]) -> bool:
+    """Complete validation pipeline for an internship or early graduate job listing.
+
+    Checks:
+    1. Not an Emiratisation/National-only quota listing.
+    2. Located in Dubai, UAE, or valid remote.
+    3. Matches target technology disciplines (SWE, AI/ML, Data, Quant).
+    4. Explicitly designed for interns, trainees, students, or early graduates.
+
+    Args:
+        job: Dictionary containing job properties (role/title, location, description, etc.).
+
+    Returns:
+        bool: True if the internship should be included, False otherwise.
+    """
+    title = job.get("role") or job.get("title") or ""
+    location = job.get("location") or ""
+    description = job.get("description") or ""
+
+    # 1. Emiratisation exclusion
+    if is_emiratisation_role(title, description, location):
+        return False
+
+    # 2. UAE Location match
+    if not matches_target_location(location):
+        return False
+
+    # 3. Early Career / Internship match
+    if not matches_internship_or_early_grad_role(title, description):
+        return False
+
+    # 4. Tech Discipline match
+    if not matches_target_role(title):
+        # Fallback check on description if title is general like "Tamara Internship Program"
+        if description and any(
+            k in description.lower()
+            for k in [
+                "software",
+                "engineering",
+                "data science",
+                "machine learning",
+                "quantitative",
+                "backend",
+                "frontend",
+            ]
+        ):
+            return True
+        return False
+
+    return True
+

@@ -16,17 +16,21 @@ from src.builder import (
 )
 from src.fetchers import (
     _format_date,
+    fetch_ashby_jobs,
     fetch_greenhouse_jobs,
     fetch_lever_jobs,
     fetch_smartrecruiters_jobs,
-    fetch_ashby_jobs,
 )
 from src.filter import (
+    categorize_tech_role,
+    filter_internship_job,
     filter_job,
     is_emiratisation_role,
+    matches_internship_or_early_grad_role,
     matches_target_location,
     matches_target_role,
 )
+
 
 
 # ==========================================
@@ -364,3 +368,109 @@ class TestFetchers:
         assert len(jobs) == 1
         assert jobs[0]["role"] == "Backend Engineer"
         assert jobs[0]["source"] == "ashby"
+
+
+# ==========================================
+# 6. Intern & Early Graduate Filter Tests
+# ==========================================
+class TestInternshipFilter:
+    @pytest.mark.parametrize(
+        "title,expected",
+        [
+            ("Software Engineer: Intern/New Grad", True),
+            ("Software Engineering Intern", True),
+            ("Graduate Software Engineer", True),
+            ("Junior Data Scientist", True),
+            ("Commercial Graduate Scheme, Junior Data Scientist", True),
+            ("AI Research & Quantitative Analyst Trainee", True),
+            ("Binance Accelerator Program - Data Scientist, Analytics", True),
+            ("Technology Graduate Trainee", True),
+            ("Data Science Intern", True),
+            ("Software Engineer Apprentice", True),
+            # Non-intern standard roles should return False
+            ("Software Engineer", False),
+            ("Backend Engineer", False),
+            ("Data Scientist", False),
+            ("Quantitative Researcher", False),
+            # Senior/lead roles should return False even if keywords resemble
+            ("Senior Backend Engineer", False),
+            ("Lead Data Scientist", False),
+            ("Principal AI Architect", False),
+            ("Staff Machine Learning Engineer", False),
+            ("Director of Engineering", False),
+        ],
+    )
+    def test_matches_internship_or_early_grad_role(self, title, expected):
+        assert matches_internship_or_early_grad_role(title) is expected
+
+    @pytest.mark.parametrize(
+        "title,expected_category",
+        [
+            ("Quantitative Developer Intern", "Quantitative Finance"),
+            ("Algo Trader Trainee", "Quantitative Finance"),
+            ("AI Research Intern", "AI & Machine Learning"),
+            ("Machine Learning Engineer - Graduate Scheme", "AI & Machine Learning"),
+            ("Data Science Intern", "Data Science & Engineering"),
+            ("Junior Data Engineer", "Data Science & Engineering"),
+            ("Software Engineer: Intern/New Grad", "Software Engineering"),
+            ("Full Stack Developer Intern", "Software Engineering"),
+            ("DevOps Engineer Trainee", "Software Engineering"),
+        ],
+    )
+    def test_categorize_tech_role(self, title, expected_category):
+        assert categorize_tech_role(title) == expected_category
+
+    def test_filter_internship_job_valid(self):
+        job = {
+            "role": "Software Engineer: Intern/New Grad",
+            "location": "Dubai, UAE",
+            "description": "Develop high-scale cloud backend services.",
+        }
+        assert filter_internship_job(job) is True
+
+    def test_filter_internship_job_blocks_emiratisation(self):
+        job = {
+            "role": "Software Engineering Intern - Emiratisation Scheme",
+            "location": "Dubai, UAE",
+            "description": "National career development program.",
+        }
+        assert filter_internship_job(job) is False
+
+    def test_filter_internship_job_blocks_non_tech(self):
+        job = {
+            "role": "Marketing Intern",
+            "location": "Dubai, UAE",
+            "description": "Social media and branding campaigns.",
+        }
+        assert filter_internship_job(job) is False
+
+    def test_filter_internship_job_blocks_non_uae(self):
+        job = {
+            "role": "Software Engineer Intern",
+            "location": "London, United Kingdom",
+            "description": "Work in our UK development center.",
+        }
+        assert filter_internship_job(job) is False
+
+    def test_filter_internship_job_blocks_experienced_role(self):
+        job = {
+            "role": "Senior Software Engineer",
+            "location": "Dubai, UAE",
+            "description": "Lead distributed microservices.",
+        }
+        assert filter_internship_job(job) is False
+
+    def test_markdown_table_with_discipline(self):
+        jobs = [
+            {
+                "company": "Asula Labs",
+                "role": "Software Engineer: Intern/New Grad",
+                "category": "Software Engineering",
+                "location": "Dubai, UAE",
+                "apply_url": "https://jobs.ashbyhq.com/asula",
+                "date_posted": "2026-10-28",
+            }
+        ]
+        table = generate_markdown_table(jobs, include_category=True)
+        assert "| **Asula Labs** | Software Engineer: Intern/New Grad | `Software Engineering` | Dubai, UAE | [Apply ↗](https://jobs.ashbyhq.com/asula) | 2026-10-28 |" in table
+

@@ -32,13 +32,14 @@ jobs:
         run: |
           pytest -v
 
-      - name: Fetch ATS Jobs & Rebuild README
+      - name: Fetch ATS Jobs & Rebuild Tables
         run: |
-          python main.py --fetch
+          python main.py --all
 
       - name: Commit and Push Updated Listings
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/listings.json README.md
+          git add data/listings.json data/internships.json README.md INTERNSHIPS.md
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(jobs): auto-sync ATS listings [skip ci]" && git push)
+

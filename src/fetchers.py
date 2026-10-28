@@ -2,10 +2,10 @@
 
 import datetime
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 import requests
 
-from src.filter import filter_job
+from src.filter import categorize_tech_role, filter_internship_job, filter_job
 
 logger = logging.getLogger(__name__)
 
@@ -23,6 +23,11 @@ DEFAULT_COMPANIES = [
     {"name": "Binance", "ats": "greenhouse", "token": "binance"},
     {"name": "Bybit", "ats": "greenhouse", "token": "bybit"},
     {"name": "Cobblestone Energy", "ats": "greenhouse", "token": "cobblestoneenergy"},
+    {"name": "Asula Labs", "ats": "ashby", "token": "asula"},
+    {"name": "Vatic Labs", "ats": "greenhouse", "token": "vaticlabs"},
+    {"name": "Analog", "ats": "ashby", "token": "analog"},
+    {"name": "Point72", "ats": "greenhouse", "token": "point72"},
+    {"name": "Lean Technologies", "ats": "ashby", "token": "leantech"},
     {"name": "Cohere", "ats": "ashby", "token": "cohere"},
     {"name": "Fireblocks", "ats": "greenhouse", "token": "fireblocks"},
     {"name": "Delivery Hero", "ats": "smartrecruiters", "token": "DeliveryHero"},
@@ -60,12 +65,16 @@ def _format_date(date_val: Any) -> str:
 
 
 def fetch_greenhouse_jobs(
-    company_name: str, board_token: str, session: Optional[requests.Session] = None
+    company_name: str,
+    board_token: str,
+    session: Optional[requests.Session] = None,
+    filter_func: Optional[Callable[[Dict[str, Any]], bool]] = None,
 ) -> List[Dict[str, Any]]:
     """Fetch and normalize job postings from Greenhouse API.
 
     API: https://boards-api.greenhouse.io/v1/boards/{board_token}/jobs?content=true
     """
+    checker = filter_func or filter_job
     url = f"https://boards-api.greenhouse.io/v1/boards/{board_token}/jobs"
     client = session or requests
     listings: List[Dict[str, Any]] = []
@@ -103,7 +112,7 @@ def fetch_greenhouse_jobs(
                 "source": "greenhouse",
                 "description": job.get("content", ""),
             }
-            if filter_job(item):
+            if checker(item):
                 # Clean description before saving to listings
                 clean_item = {k: v for k, v in item.items() if k != "description"}
                 listings.append(clean_item)
@@ -115,12 +124,16 @@ def fetch_greenhouse_jobs(
 
 
 def fetch_lever_jobs(
-    company_name: str, board_token: str, session: Optional[requests.Session] = None
+    company_name: str,
+    board_token: str,
+    session: Optional[requests.Session] = None,
+    filter_func: Optional[Callable[[Dict[str, Any]], bool]] = None,
 ) -> List[Dict[str, Any]]:
     """Fetch and normalize job postings from Lever API.
 
     API: https://api.lever.co/v0/postings/{board_token}?mode=json
     """
+    checker = filter_func or filter_job
     url = f"https://api.lever.co/v0/postings/{board_token}"
     client = session or requests
     listings: List[Dict[str, Any]] = []
@@ -161,7 +174,7 @@ def fetch_lever_jobs(
                 "source": "lever",
                 "description": description,
             }
-            if filter_job(item):
+            if checker(item):
                 clean_item = {k: v for k, v in item.items() if k != "description"}
                 listings.append(clean_item)
 
@@ -172,12 +185,16 @@ def fetch_lever_jobs(
 
 
 def fetch_smartrecruiters_jobs(
-    company_name: str, company_token: str, session: Optional[requests.Session] = None
+    company_name: str,
+    company_token: str,
+    session: Optional[requests.Session] = None,
+    filter_func: Optional[Callable[[Dict[str, Any]], bool]] = None,
 ) -> List[Dict[str, Any]]:
     """Fetch and normalize job postings from SmartRecruiters API.
 
     API: https://api.smartrecruiters.com/v1/companies/{company_token}/postings
     """
+    checker = filter_func or filter_job
     url = f"https://api.smartrecruiters.com/v1/companies/{company_token}/postings"
     client = session or requests
     listings: List[Dict[str, Any]] = []
@@ -218,7 +235,7 @@ def fetch_smartrecruiters_jobs(
                 "date_posted": _format_date(released_date),
                 "source": "smartrecruiters",
             }
-            if filter_job(item):
+            if checker(item):
                 listings.append(item)
 
     except Exception as e:
@@ -228,12 +245,16 @@ def fetch_smartrecruiters_jobs(
 
 
 def fetch_ashby_jobs(
-    company_name: str, board_token: str, session: Optional[requests.Session] = None
+    company_name: str,
+    board_token: str,
+    session: Optional[requests.Session] = None,
+    filter_func: Optional[Callable[[Dict[str, Any]], bool]] = None,
 ) -> List[Dict[str, Any]]:
     """Fetch and normalize job postings from Ashby API.
 
     API: https://api.ashbyhq.com/posting-api/job-board/{board_token}
     """
+    checker = filter_func or filter_job
     url = f"https://api.ashbyhq.com/posting-api/job-board/{board_token}"
     client = session or requests
     listings: List[Dict[str, Any]] = []
@@ -270,7 +291,7 @@ def fetch_ashby_jobs(
                 "source": "ashby",
                 "description": description,
             }
-            if filter_job(item):
+            if checker(item):
                 clean_item = {k: v for k, v in item.items() if k != "description"}
                 listings.append(clean_item)
 
@@ -283,8 +304,9 @@ def fetch_ashby_jobs(
 def fetch_all_jobs(
     companies: Optional[List[Dict[str, str]]] = None,
     session: Optional[requests.Session] = None,
+    filter_func: Optional[Callable[[Dict[str, Any]], bool]] = None,
 ) -> List[Dict[str, Any]]:
-    """Query all configured ATS endpoints and return filtered tech listings."""
+    """Query all configured ATS endpoints and return filtered listings."""
     target_companies = companies or DEFAULT_COMPANIES
     sess = session or requests.Session()
     all_jobs: List[Dict[str, Any]] = []
@@ -296,13 +318,13 @@ def fetch_all_jobs(
 
         logger.info("Fetching jobs for %s via %s...", name, ats)
         if ats == "greenhouse":
-            jobs = fetch_greenhouse_jobs(name, token, session=sess)
+            jobs = fetch_greenhouse_jobs(name, token, session=sess, filter_func=filter_func)
         elif ats == "lever":
-            jobs = fetch_lever_jobs(name, token, session=sess)
+            jobs = fetch_lever_jobs(name, token, session=sess, filter_func=filter_func)
         elif ats == "smartrecruiters":
-            jobs = fetch_smartrecruiters_jobs(name, token, session=sess)
+            jobs = fetch_smartrecruiters_jobs(name, token, session=sess, filter_func=filter_func)
         elif ats == "ashby":
-            jobs = fetch_ashby_jobs(name, token, session=sess)
+            jobs = fetch_ashby_jobs(name, token, session=sess, filter_func=filter_func)
         else:
             logger.warning("Unsupported ATS '%s' for company %s", ats, name)
             continue
@@ -311,3 +333,18 @@ def fetch_all_jobs(
         all_jobs.extend(jobs)
 
     return all_jobs
+
+
+def fetch_all_internships(
+    companies: Optional[List[Dict[str, str]]] = None,
+    session: Optional[requests.Session] = None,
+) -> List[Dict[str, Any]]:
+    """Query ATS endpoints specifically for early graduate and internship tech roles."""
+    internships = fetch_all_jobs(
+        companies=companies, session=session, filter_func=filter_internship_job
+    )
+    for item in internships:
+        if not item.get("category"):
+            item["category"] = categorize_tech_role(item.get("role", ""))
+    return internships
+

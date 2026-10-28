@@ -5,15 +5,15 @@ on:
     branches:
       - main
     paths:
-      - 'data/listings.json'
-      - 'templates/README.template.md'
+      - 'data/**'
+      - 'templates/**'
       - 'src/builder.py'
   pull_request:
     branches:
       - main
     paths:
-      - 'data/listings.json'
-      - 'templates/README.template.md'
+      - 'data/**'
+      - 'templates/**'
       - 'src/**'
   workflow_dispatch:
 
@@ -43,14 +43,15 @@ jobs:
         run: |
           pytest -v
 
-      - name: Compile README Table
+      - name: Compile Markdown Tables
         run: |
-          python main.py --build
+          python main.py --build --build-internships
 
       - name: Commit and Push Changes
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md data/listings.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(readme): automated rebuild of README table [skip ci]" && git push)
+          git add README.md INTERNSHIPS.md data/listings.json data/internships.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(readme): automated rebuild of markdown tables [skip ci]" && git push)
+
