@@ -6,7 +6,7 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Internships-15-purple?style=flat-square&logo=target)](data/internships.json)
+[![Active Roles](https://img.shields.io/badge/Active_Internships-21-purple?style=flat-square&logo=target)](data/internships.json)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-28-brightgreen?style=flat-square&logo=clock)](data/internships.json)
 [![Target Audience](https://img.shields.io/badge/Target-Students_%26_Undergrads-orange?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Full Directory](https://img.shields.io/badge/All_Tech_Roles-README.md-blue?style=flat-square&logo=readme)](README.md)
@@ -21,7 +21,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Active Intern & Graduate Roles** | `15` verified positions |
+| **Active Intern & Graduate Roles** | `21` verified positions |
 | **Target Candidate Profile** | Students, Undergraduates, Master's, PhD & Fresh Graduates (0–2 YOE) |
 | **Core Disciplines** | SWE, AI/ML, Data Science, Quant Trading, Product Management, Associate Project Management |
 | **Geographic Scope** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (ADGM, Hub71), UAE Remote |
@@ -37,13 +37,19 @@
 
 | Company | Role | Discipline | Location | Apply Link | Date Posted |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Asula Labs** | Software Engineer: Intern/New Grad | `Software Engineering` | Dubai, UAE | [Apply ↗](https://jobs.ashbyhq.com/asula/ef6a983e-6c8c-4344-a4b4-7b05874128ee) | 2026-10-28 |
+| **Binance** | Binance Accelerator Program - TradFI Business Development | `Software Engineering` | Hong Kong; Malaysia; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002315101) | 2026-10-27 |
+| **Binance** | Binance Accelerator Program - Ads Implementation | `Software Engineering` | Hong Kong; India; Malaysia; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002743101) | 2026-10-26 |
 | **Tamara** | Tamara Internship Program (Product & Design Tracks) | `Product Management` | Dubai, United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/tamara/jobs/4996993101) | 2026-10-25 |
+| **Binance** | Binance Accelerator Program - Internal Audit (Technology) | `Software Engineering` | Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002254101) | 2026-10-23 |
 | **ByteDance / TikTok** | Product Project Intern (AI Platforms & Creator Tools) | `Product Management` | Dubai Internet City, Dubai, UAE | [Apply ↗](https://careers.tiktok.com) | 2026-10-22 |
-| **Binance** | Binance Accelerator Program - Data Scientist, Analytics | `Data Science & Engineering` | Dubai, UAE (Global Remote Open to UAE) | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002258101) | 2026-10-19 |
+| **Binance** | Binance Accelerator Program - VIP Sales | `Software Engineering` | Brazil; Colombia; Mexico; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002283101) | 2026-10-21 |
+| **Binance** | Binance Accelerator Program - Affiliate BD | `Software Engineering` | Singapore; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002599101) | 2026-10-20 |
+| **Binance** | Binance Accelerator Program - Data Scientist, Analytics | `Data Science & Engineering` | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002258101) | 2026-10-19 |
+| **Binance** | Binance Accelerator Program - Brand KOL | `Software Engineering` | Hong Kong; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002401101) | 2026-10-19 |
 | **Revolut** | Associate Product Manager / Operations Intern | `Product Management` | Dubai, UAE | [Apply ↗](https://www.revolut.com/careers) | 2026-10-18 |
 | **The Emirates Group** | IT Graduate Programme - Software Engineering & Architecture | `Software Engineering` | Dubai, UAE | [Apply ↗](https://www.emiratesgroupcareers.com) | 2026-10-15 |
 | **Amazon** | Program Manager Intern - Operations & Cloud Tech | `Associate Project Management` | Dubai, UAE | [Apply ↗](https://amazon.jobs) | 2026-10-12 |
+| **Tamara** | Tamara Internship Program | `Software Engineering` | Riyadh Saudi Arabia, Dubai United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/tamara/jobs/4996993101) | 2026-10-12 |
 | **Emirates NBD** | University Internship Program - Tech, Analytics & AI | `AI & Machine Learning` | Dubai, UAE | [Apply ↗](https://www.emiratesnbd.com/en/careers) | 2026-10-10 |
 | **The Emirates Group** | IT Graduate Programme - Technical Project Management & Delivery | `Associate Project Management` | Dubai, UAE | [Apply ↗](https://www.emiratesgroupcareers.com) | 2026-10-08 |
 | **Property Finder** | Engineering Graduate Trainee (SWE & Data Platforms) | `Software Engineering` | Dubai, UAE | [Apply ↗](https://www.propertyfinder.ae/careers) | 2026-10-05 |

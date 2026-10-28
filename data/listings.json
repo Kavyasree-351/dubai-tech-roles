@@ -27,6 +27,42 @@
     "source": "greenhouse"
   },
   {
+    "job_id": "gh-binance-5011782101",
+    "company": "Binance",
+    "role": "Senior Risk Strategist, Market Manipulation (Trading Risk)",
+    "location": "Australia; Hong Kong; Singapore; United Arab Emirates",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5011782101",
+    "date_posted": "2026-10-23",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "ashby-analog-1a92a5c6-5bd9-4cee-855e-47a95bab6c16",
+    "company": "Analog",
+    "role": "Distributed Systems Architect: Bare-Metal and High-Scale",
+    "location": "Abu Dhabi",
+    "apply_url": "https://jobs.ashbyhq.com/analog/1a92a5c6-5bd9-4cee-855e-47a95bab6c16",
+    "date_posted": "2026-10-22",
+    "source": "ashby"
+  },
+  {
+    "job_id": "gh-point72-7318012002",
+    "company": "Point72",
+    "role": "Cubist Quantitative Researcher",
+    "location": "Dubai, London, Paris, Hong Kong, Sydney, Toronto",
+    "apply_url": "https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002",
+    "date_posted": "2026-10-22",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-point72-7045936002",
+    "company": "Point72",
+    "role": "Cubist Quantitative Researcher",
+    "location": "Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo",
+    "apply_url": "https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002",
+    "date_posted": "2026-10-22",
+    "source": "greenhouse"
+  },
+  {
     "job_id": "gh-bybit-4996350101",
     "company": "Bybit",
     "role": "Principal Backend Development Engineer(C++)",
@@ -81,12 +117,66 @@
     "source": "greenhouse"
   },
   {
+    "job_id": "gh-bybit-4975178101",
+    "company": "Bybit",
+    "role": "Senior Data Analyst",
+    "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
+    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4975178101",
+    "date_posted": "2026-10-14",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-bybit-4909003101",
+    "company": "Bybit",
+    "role": "Senior Data Analyst - Growth/Marketing",
+    "location": "Abu Dhabi, UAE; Hong Kong SAR; Kuala Lumpur, Malaysia",
+    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4909003101",
+    "date_posted": "2026-10-14",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-bybit-4968567101",
+    "company": "Bybit",
+    "role": "Senior Product Manager – Trading & Onchain",
+    "location": "Abu Dhabi, UAE",
+    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4968567101",
+    "date_posted": "2026-10-14",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "ashby-analog-60f25aba-ba6e-44d8-bdf0-6dd40a2b4acb",
+    "company": "Analog",
+    "role": "Infrastructure Engineer",
+    "location": "Abu Dhabi",
+    "apply_url": "https://jobs.ashbyhq.com/analog/60f25aba-ba6e-44d8-bdf0-6dd40a2b4acb",
+    "date_posted": "2026-10-14",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-analog-b5f45f29-fcc6-485c-b3c1-11666bf4d916",
+    "company": "Analog",
+    "role": "Security Engineer",
+    "location": "Abu Dhabi",
+    "apply_url": "https://jobs.ashbyhq.com/analog/b5f45f29-fcc6-485c-b3c1-11666bf4d916",
+    "date_posted": "2026-10-14",
+    "source": "ashby"
+  },
+  {
     "job_id": "ashby-rain-7e211b55-5069-45b2-8072-c6555a5b53cd",
     "company": "Rain",
     "role": "Security Engineer - AppSec",
     "location": "Remote",
     "apply_url": "https://jobs.ashbyhq.com/rain/7e211b55-5069-45b2-8072-c6555a5b53cd",
     "date_posted": "2026-10-05",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-analog-0ba77746-2640-4d05-8d91-139eda20b6dc",
+    "company": "Analog",
+    "role": "Backend Engineer",
+    "location": "Abu Dhabi",
+    "apply_url": "https://jobs.ashbyhq.com/analog/0ba77746-2640-4d05-8d91-139eda20b6dc",
+    "date_posted": "2026-10-02",
     "source": "ashby"
   },
   {
@@ -97,6 +187,42 @@
     "apply_url": "https://www.fireblocks.com/careers/position?gh_jid=4700431006",
     "date_posted": "2026-10-01",
     "source": "greenhouse"
+  },
+  {
+    "job_id": "ashby-analog-b82163fd-60c6-49de-a5b1-b7a7802c49c4",
+    "company": "Analog",
+    "role": "Senior Backend Engineer",
+    "location": "Abu Dhabi",
+    "apply_url": "https://jobs.ashbyhq.com/analog/b82163fd-60c6-49de-a5b1-b7a7802c49c4",
+    "date_posted": "2026-09-24",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-analog-0c7cc820-ce0a-4d61-b2da-0451289379fb",
+    "company": "Analog",
+    "role": "Data Engineer",
+    "location": "Abu Dhabi",
+    "apply_url": "https://jobs.ashbyhq.com/analog/0c7cc820-ce0a-4d61-b2da-0451289379fb",
+    "date_posted": "2026-09-24",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-analog-a3e20901-3141-4193-9b56-c16d21836ec6",
+    "company": "Analog",
+    "role": "DevOps/Platform Engineer",
+    "location": "Abu Dhabi",
+    "apply_url": "https://jobs.ashbyhq.com/analog/a3e20901-3141-4193-9b56-c16d21836ec6",
+    "date_posted": "2026-09-24",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-analog-14ed4069-4577-45bd-be8f-a95bde3dc03d",
+    "company": "Analog",
+    "role": "Senior Frontend Engineer",
+    "location": "Abu Dhabi",
+    "apply_url": "https://jobs.ashbyhq.com/analog/14ed4069-4577-45bd-be8f-a95bde3dc03d",
+    "date_posted": "2026-09-24",
+    "source": "ashby"
   },
   {
     "job_id": "ashby-rain-f4fc9289-e16d-4d4a-afb7-deedab74d3ac",

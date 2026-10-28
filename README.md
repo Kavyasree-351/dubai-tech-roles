@@ -6,7 +6,7 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Roles-13-blue?style=flat-square&logo=target)](data/listings.json)
+[![Active Roles](https://img.shields.io/badge/Active_Roles-27-blue?style=flat-square&logo=target)](data/listings.json)
 [![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-28-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
@@ -25,7 +25,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Active Tech Roles** | `13` verified positions |
+| **Total Active Tech Roles** | `27` verified positions |
 | **Last Synchronized** | `2026-10-28` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
@@ -42,14 +42,28 @@
 | **Delivery Hero** | Sr. Manager Data Science (Dark Stores Intelligence) | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000157994040) | 2026-10-27 |
 | **Binance** | Backend Architect, Binance Pay & Card | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002465101) | 2026-10-26 |
 | **Binance** | Full Stack Engineer (Frontend Oriented) — Identity & Security | Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5007086101) | 2026-10-25 |
+| **Binance** | Senior Risk Strategist, Market Manipulation (Trading Risk) | Australia; Hong Kong; Singapore; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5011782101) | 2026-10-23 |
+| **Analog** | Distributed Systems Architect: Bare-Metal and High-Scale | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/1a92a5c6-5bd9-4cee-855e-47a95bab6c16) | 2026-10-22 |
+| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002) | 2026-10-22 |
+| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002) | 2026-10-22 |
 | **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996350101) | 2026-10-21 |
 | **Binance** | Binance Accelerator Program - Data Scientist, Analytics | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002258101) | 2026-10-19 |
 | **Bybit** | Lead Backend Engineer, Trading Risk | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996982101) | 2026-10-19 |
 | **Binance** | DevOps Engineer, Blockchain Infra (Fully Remote) | Europe; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002663101) | 2026-10-15 |
 | **Bybit** | Principal AI Agent Development Engineer/Architect | Abu Dhabi, UAE; Hong Kong SAR; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4905494101) | 2026-10-14 |
 | **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4962936101) | 2026-10-14 |
+| **Bybit** | Senior Data Analyst | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4975178101) | 2026-10-14 |
+| **Bybit** | Senior Data Analyst - Growth/Marketing | Abu Dhabi, UAE; Hong Kong SAR; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4909003101) | 2026-10-14 |
+| **Bybit** | Senior Product Manager – Trading & Onchain | Abu Dhabi, UAE | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4968567101) | 2026-10-14 |
+| **Analog** | Infrastructure Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/60f25aba-ba6e-44d8-bdf0-6dd40a2b4acb) | 2026-10-14 |
+| **Analog** | Security Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/b5f45f29-fcc6-485c-b3c1-11666bf4d916) | 2026-10-14 |
 | **Rain** | Security Engineer - AppSec | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/7e211b55-5069-45b2-8072-c6555a5b53cd) | 2026-10-05 |
+| **Analog** | Backend Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/0ba77746-2640-4d05-8d91-139eda20b6dc) | 2026-10-02 |
 | **Fireblocks** | Solution Architect, UAE | Dubai | [Apply ↗](https://www.fireblocks.com/careers/position?gh_jid=4700431006) | 2026-10-01 |
+| **Analog** | Senior Backend Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/b82163fd-60c6-49de-a5b1-b7a7802c49c4) | 2026-09-24 |
+| **Analog** | Data Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/0c7cc820-ce0a-4d61-b2da-0451289379fb) | 2026-09-24 |
+| **Analog** | DevOps/Platform Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/a3e20901-3141-4193-9b56-c16d21836ec6) | 2026-09-24 |
+| **Analog** | Senior Frontend Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/14ed4069-4577-45bd-be8f-a95bde3dc03d) | 2026-09-24 |
 | **Rain** | Site Reliability Engineer | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/f4fc9289-e16d-4d4a-afb7-deedab74d3ac) | 2026-09-14 |
 | **Rain** | Software Engineer - Wallets | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/6393bceb-88cf-4806-a51c-401be580c59e) | 2026-09-03 |
 
