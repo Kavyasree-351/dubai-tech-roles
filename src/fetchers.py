@@ -19,6 +19,8 @@ DEFAULT_TIMEOUT = 12
 
 # Registry of UAE-operating companies and their ATS providers
 DEFAULT_COMPANIES = [
+    {"name": "Binance", "ats": "greenhouse", "token": "binance"},
+    {"name": "Bybit", "ats": "greenhouse", "token": "bybit"},
     {"name": "Careem", "ats": "greenhouse", "token": "careem"},
     {"name": "Kitopi", "ats": "greenhouse", "token": "kitopi"},
     {"name": "Sarwa", "ats": "lever", "token": "sarwa"},
