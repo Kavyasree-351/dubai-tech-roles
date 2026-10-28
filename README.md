@@ -6,7 +6,7 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Roles-27-blue?style=flat-square&logo=target)](data/listings.json)
+[![Active Roles](https://img.shields.io/badge/Active_Roles-28-blue?style=flat-square&logo=target)](data/listings.json)
 [![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-28-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
@@ -25,7 +25,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Active Tech Roles** | `27` verified positions |
+| **Total Active Tech Roles** | `28` verified positions |
 | **Last Synchronized** | `2026-10-28` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
@@ -39,6 +39,8 @@
 
 | Company | Role | Location | Apply Link | Date Posted |
 | :--- | :--- | :--- | :--- | :--- |
+| **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996350101) | 2026-10-28 |
+| **Bybit** | Principal Backend Development Engineer (C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/5013054101) | 2026-10-28 |
 | **Delivery Hero** | Sr. Manager Data Science (Dark Stores Intelligence) | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000157994040) | 2026-10-27 |
 | **Binance** | Backend Architect, Binance Pay & Card | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002465101) | 2026-10-26 |
 | **Binance** | Full Stack Engineer (Frontend Oriented) — Identity & Security | Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5007086101) | 2026-10-25 |
@@ -46,7 +48,6 @@
 | **Analog** | Distributed Systems Architect: Bare-Metal and High-Scale | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/1a92a5c6-5bd9-4cee-855e-47a95bab6c16) | 2026-10-22 |
 | **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002) | 2026-10-22 |
 | **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002) | 2026-10-22 |
-| **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996350101) | 2026-10-21 |
 | **Binance** | Binance Accelerator Program - Data Scientist, Analytics | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002258101) | 2026-10-19 |
 | **Bybit** | Lead Backend Engineer, Trading Risk | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996982101) | 2026-10-19 |
 | **Binance** | DevOps Engineer, Blockchain Infra (Fully Remote) | Europe; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002663101) | 2026-10-15 |
