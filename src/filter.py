@@ -85,6 +85,9 @@ NON_UAE_REMOTE_PATTERNS: List[str] = [
     r"\blatam\b",
     r"\bapac\b",
     r"\bindia only\b",
+    r"\bremote,\s*(?:usa?|united states|uk|india|canada|brazil)\b",
+    r"\bremote\s*-\s*(?:usa?|united states|uk|india|canada|brazil)\b",
+    r"\bremote\s*\((?:usa?|united states|uk|india|canada|brazil)\)\b",
 ]
 
 

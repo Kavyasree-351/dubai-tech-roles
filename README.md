@@ -6,7 +6,7 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
-[![Active Roles](https://img.shields.io/badge/Active_Roles-11-blue?style=flat-square&logo=target)](data/listings.json)
+[![Active Roles](https://img.shields.io/badge/Active_Roles-21-blue?style=flat-square&logo=target)](data/listings.json)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-28-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
@@ -20,7 +20,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Active Tech Roles** | `11` verified positions |
+| **Total Active Tech Roles** | `21` verified positions |
 | **Last Synchronized** | `2026-10-28` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
@@ -34,17 +34,27 @@
 
 | Company | Role | Location | Apply Link | Date Posted |
 | :--- | :--- | :--- | :--- | :--- |
+| **Delivery Hero** | Sr. Manager Data Science (Dark Stores Intelligence) | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000157994040) | 2026-10-27 |
 | **Binance** | Backend Architect, Binance Pay & Card | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002465101) | 2026-10-26 |
-| **Careem** | Senior Backend Engineer - Core Services | Dubai, UAE | [Apply ↗](https://www.careem.com/careers/job/careem-sr-backend-eng-001) | 2026-10-25 |
 | **Binance** | Full Stack Engineer (Frontend Oriented) — Identity & Security | Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5007086101) | 2026-10-25 |
-| **Sarwa** | Staff Machine Learning Engineer - WealthTech | DIFC, Dubai, UAE | [Apply ↗](https://www.sarwa.co/careers/job/sarwa-staff-ml-eng-002) | 2026-10-24 |
-| **Kitopi** | Lead Data Scientist - Kitchen Intelligence | Dubai Internet City, UAE | [Apply ↗](https://careers.kitopi.com/job/kitopi-lead-data-scientist-003) | 2026-10-23 |
 | **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996350101) | 2026-10-21 |
 | **Binance** | Binance Accelerator Program - Data Scientist, Analytics | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002258101) | 2026-10-19 |
 | **Bybit** | Lead Backend Engineer, Trading Risk | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996982101) | 2026-10-19 |
 | **Binance** | DevOps Engineer, Blockchain Infra (Fully Remote) | Europe; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002663101) | 2026-10-15 |
 | **Bybit** | Principal AI Agent Development Engineer/Architect | Abu Dhabi, UAE; Hong Kong SAR; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4905494101) | 2026-10-14 |
 | **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4962936101) | 2026-10-14 |
+| **Rain** | Security Engineer - AppSec | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/7e211b55-5069-45b2-8072-c6555a5b53cd) | 2026-10-05 |
+| **Fireblocks** | Solution Architect, UAE | Dubai | [Apply ↗](https://www.fireblocks.com/careers/position?gh_jid=4700431006) | 2026-10-01 |
+| **Rain** | Site Reliability Engineer | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/f4fc9289-e16d-4d4a-afb7-deedab74d3ac) | 2026-09-14 |
+| **Rain** | Software Engineer - Wallets | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/6393bceb-88cf-4806-a51c-401be580c59e) | 2026-09-03 |
+| **Cohere** | Solutions Architect - UAE | Dubai | [Apply ↗](https://jobs.ashbyhq.com/cohere/f154a1cb-b7c1-4f74-ac50-04ef9dcfc9e0) | 2026-08-19 |
+| **Cobblestone Energy** | Commercial Graduate Scheme, Junior Data Scientist - Dubai, UAE | Dubai, UAE | [Apply ↗](https://job-boards.greenhouse.io/cobblestoneenergy/jobs/7772325003) | 2026-08-17 |
+| **Ziina** | Backend Engineer, Payments Platform | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/b52d240f-2ccb-4aea-800b-623e9ca8ae09) | 2026-08-12 |
+| **Ziina** | Senior Backend Engineer, Payments Experience | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/688eb0ce-a666-4828-98b3-cd2239535744) | 2026-08-12 |
+| **Ziina** | Full-Stack Engineer (Internal Tools) | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/fba4d650-5f20-4792-9ae7-472ef447b768) | 2026-08-11 |
+| **Ziina** | Senior Platform Engineer (Infrastructure) | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/0e2861ef-b501-4591-88bd-f418a63620d8) | 2026-04-21 |
+| **Ziina** | Platform Engineer (Developer Enablement) | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/b72caf1d-e9a0-483f-9fb9-4d1cd7f28ecb) | 2026-04-21 |
+| **Ziina** | Senior Full-Stack Engineer (Web) | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/e1f0f84a-2867-45a6-967d-44462c66ce59) | 2025-10-28 |
 
 ---
 

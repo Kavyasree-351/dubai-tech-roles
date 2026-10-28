@@ -1,5 +1,14 @@
 [
   {
+    "job_id": "sr-DeliveryHero-744000157994040",
+    "company": "Delivery Hero",
+    "role": "Sr. Manager Data Science (Dark Stores Intelligence)",
+    "location": "Dubai, Dubai, ae",
+    "apply_url": "https://jobs.smartrecruiters.com/DeliveryHero/744000157994040",
+    "date_posted": "2026-10-27",
+    "source": "smartrecruiters"
+  },
+  {
     "job_id": "gh-binance-5002465101",
     "company": "Binance",
     "role": "Backend Architect, Binance Pay & Card",
@@ -9,15 +18,6 @@
     "source": "greenhouse"
   },
   {
-    "job_id": "careem-sr-backend-eng-001",
-    "company": "Careem",
-    "role": "Senior Backend Engineer - Core Services",
-    "location": "Dubai, UAE",
-    "apply_url": "https://www.careem.com/careers/job/careem-sr-backend-eng-001",
-    "date_posted": "2026-10-25",
-    "source": "manual"
-  },
-  {
     "job_id": "gh-binance-5007086101",
     "company": "Binance",
     "role": "Full Stack Engineer (Frontend Oriented) — Identity & Security",
@@ -25,24 +25,6 @@
     "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5007086101",
     "date_posted": "2026-10-25",
     "source": "greenhouse"
-  },
-  {
-    "job_id": "sarwa-staff-ml-eng-002",
-    "company": "Sarwa",
-    "role": "Staff Machine Learning Engineer - WealthTech",
-    "location": "DIFC, Dubai, UAE",
-    "apply_url": "https://www.sarwa.co/careers/job/sarwa-staff-ml-eng-002",
-    "date_posted": "2026-10-24",
-    "source": "manual"
-  },
-  {
-    "job_id": "kitopi-lead-data-scientist-003",
-    "company": "Kitopi",
-    "role": "Lead Data Scientist - Kitchen Intelligence",
-    "location": "Dubai Internet City, UAE",
-    "apply_url": "https://careers.kitopi.com/job/kitopi-lead-data-scientist-003",
-    "date_posted": "2026-10-23",
-    "source": "manual"
   },
   {
     "job_id": "gh-bybit-4996350101",
@@ -97,5 +79,113 @@
     "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4962936101",
     "date_posted": "2026-10-14",
     "source": "greenhouse"
+  },
+  {
+    "job_id": "ashby-rain-7e211b55-5069-45b2-8072-c6555a5b53cd",
+    "company": "Rain",
+    "role": "Security Engineer - AppSec",
+    "location": "Remote",
+    "apply_url": "https://jobs.ashbyhq.com/rain/7e211b55-5069-45b2-8072-c6555a5b53cd",
+    "date_posted": "2026-10-05",
+    "source": "ashby"
+  },
+  {
+    "job_id": "gh-fireblocks-4700431006",
+    "company": "Fireblocks",
+    "role": "Solution Architect, UAE",
+    "location": "Dubai",
+    "apply_url": "https://www.fireblocks.com/careers/position?gh_jid=4700431006",
+    "date_posted": "2026-10-01",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "ashby-rain-f4fc9289-e16d-4d4a-afb7-deedab74d3ac",
+    "company": "Rain",
+    "role": "Site Reliability Engineer",
+    "location": "Remote",
+    "apply_url": "https://jobs.ashbyhq.com/rain/f4fc9289-e16d-4d4a-afb7-deedab74d3ac",
+    "date_posted": "2026-09-14",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-rain-6393bceb-88cf-4806-a51c-401be580c59e",
+    "company": "Rain",
+    "role": "Software Engineer - Wallets",
+    "location": "Remote",
+    "apply_url": "https://jobs.ashbyhq.com/rain/6393bceb-88cf-4806-a51c-401be580c59e",
+    "date_posted": "2026-09-03",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-cohere-f154a1cb-b7c1-4f74-ac50-04ef9dcfc9e0",
+    "company": "Cohere",
+    "role": "Solutions Architect - UAE",
+    "location": "Dubai",
+    "apply_url": "https://jobs.ashbyhq.com/cohere/f154a1cb-b7c1-4f74-ac50-04ef9dcfc9e0",
+    "date_posted": "2026-08-19",
+    "source": "ashby"
+  },
+  {
+    "job_id": "gh-cobblestoneenergy-7772325003",
+    "company": "Cobblestone Energy",
+    "role": "Commercial Graduate Scheme, Junior Data Scientist - Dubai, UAE",
+    "location": "Dubai, UAE",
+    "apply_url": "https://job-boards.greenhouse.io/cobblestoneenergy/jobs/7772325003",
+    "date_posted": "2026-08-17",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "ashby-ziina-b52d240f-2ccb-4aea-800b-623e9ca8ae09",
+    "company": "Ziina",
+    "role": "Backend Engineer, Payments Platform",
+    "location": "Dubai",
+    "apply_url": "https://jobs.ashbyhq.com/ziina/b52d240f-2ccb-4aea-800b-623e9ca8ae09",
+    "date_posted": "2026-08-12",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-ziina-688eb0ce-a666-4828-98b3-cd2239535744",
+    "company": "Ziina",
+    "role": "Senior Backend Engineer, Payments Experience",
+    "location": "Dubai",
+    "apply_url": "https://jobs.ashbyhq.com/ziina/688eb0ce-a666-4828-98b3-cd2239535744",
+    "date_posted": "2026-08-12",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-ziina-fba4d650-5f20-4792-9ae7-472ef447b768",
+    "company": "Ziina",
+    "role": "Full-Stack Engineer (Internal Tools)",
+    "location": "Dubai",
+    "apply_url": "https://jobs.ashbyhq.com/ziina/fba4d650-5f20-4792-9ae7-472ef447b768",
+    "date_posted": "2026-08-11",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-ziina-0e2861ef-b501-4591-88bd-f418a63620d8",
+    "company": "Ziina",
+    "role": "Senior Platform Engineer (Infrastructure)",
+    "location": "Dubai",
+    "apply_url": "https://jobs.ashbyhq.com/ziina/0e2861ef-b501-4591-88bd-f418a63620d8",
+    "date_posted": "2026-04-21",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-ziina-b72caf1d-e9a0-483f-9fb9-4d1cd7f28ecb",
+    "company": "Ziina",
+    "role": "Platform Engineer (Developer Enablement)",
+    "location": "Dubai",
+    "apply_url": "https://jobs.ashbyhq.com/ziina/b72caf1d-e9a0-483f-9fb9-4d1cd7f28ecb",
+    "date_posted": "2026-04-21",
+    "source": "ashby"
+  },
+  {
+    "job_id": "ashby-ziina-e1f0f84a-2867-45a6-967d-44462c66ce59",
+    "company": "Ziina",
+    "role": "Senior Full-Stack Engineer (Web)",
+    "location": "Dubai",
+    "apply_url": "https://jobs.ashbyhq.com/ziina/e1f0f84a-2867-45a6-967d-44462c66ce59",
+    "date_posted": "2025-10-28",
+    "source": "ashby"
   }
 ]

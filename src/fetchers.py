@@ -19,15 +19,20 @@ DEFAULT_TIMEOUT = 12
 
 # Registry of UAE-operating companies and their ATS providers
 DEFAULT_COMPANIES = [
+    {"name": "Ziina", "ats": "ashby", "token": "ziina"},
     {"name": "Binance", "ats": "greenhouse", "token": "binance"},
     {"name": "Bybit", "ats": "greenhouse", "token": "bybit"},
+    {"name": "Cobblestone Energy", "ats": "greenhouse", "token": "cobblestoneenergy"},
+    {"name": "Cohere", "ats": "ashby", "token": "cohere"},
+    {"name": "Fireblocks", "ats": "greenhouse", "token": "fireblocks"},
+    {"name": "Delivery Hero", "ats": "smartrecruiters", "token": "DeliveryHero"},
     {"name": "Careem", "ats": "greenhouse", "token": "careem"},
+    {"name": "Tamara", "ats": "greenhouse", "token": "tamara"},
+    {"name": "Rain", "ats": "ashby", "token": "rain"},
     {"name": "Kitopi", "ats": "greenhouse", "token": "kitopi"},
     {"name": "Sarwa", "ats": "lever", "token": "sarwa"},
     {"name": "Tabby", "ats": "greenhouse", "token": "tabby"},
     {"name": "Property Finder", "ats": "smartrecruiters", "token": "PropertyFinder"},
-    {"name": "Postpay", "ats": "lever", "token": "postpay"},
-    {"name": "Huspy", "ats": "greenhouse", "token": "huspy"},
 ]
 
 
@@ -222,6 +227,59 @@ def fetch_smartrecruiters_jobs(
     return listings
 
 
+def fetch_ashby_jobs(
+    company_name: str, board_token: str, session: Optional[requests.Session] = None
+) -> List[Dict[str, Any]]:
+    """Fetch and normalize job postings from Ashby API.
+
+    API: https://api.ashbyhq.com/posting-api/job-board/{board_token}
+    """
+    url = f"https://api.ashbyhq.com/posting-api/job-board/{board_token}"
+    client = session or requests
+    listings: List[Dict[str, Any]] = []
+
+    try:
+        resp = client.get(
+            url,
+            headers=DEFAULT_HEADERS,
+            timeout=DEFAULT_TIMEOUT,
+        )
+        if resp.status_code != 200:
+            logger.warning(
+                "Ashby board %s returned status %s", board_token, resp.status_code
+            )
+            return listings
+
+        data = resp.json()
+        raw_jobs = data.get("jobs", [])
+        for job in raw_jobs:
+            job_id = f"ashby-{board_token}-{job.get('id')}"
+            title = (job.get("title") or "").strip()
+            location = (job.get("location") or "").strip()
+            apply_url = (job.get("jobUrl") or job.get("applyUrl") or "").strip()
+            published_at = job.get("publishedAt")
+            description = job.get("descriptionPlain") or ""
+
+            item = {
+                "job_id": job_id,
+                "company": company_name,
+                "role": title,
+                "location": location,
+                "apply_url": apply_url,
+                "date_posted": _format_date(published_at),
+                "source": "ashby",
+                "description": description,
+            }
+            if filter_job(item):
+                clean_item = {k: v for k, v in item.items() if k != "description"}
+                listings.append(clean_item)
+
+    except Exception as e:
+        logger.error("Error fetching Ashby jobs for %s: %s", company_name, e)
+
+    return listings
+
+
 def fetch_all_jobs(
     companies: Optional[List[Dict[str, str]]] = None,
     session: Optional[requests.Session] = None,
@@ -243,6 +301,8 @@ def fetch_all_jobs(
             jobs = fetch_lever_jobs(name, token, session=sess)
         elif ats == "smartrecruiters":
             jobs = fetch_smartrecruiters_jobs(name, token, session=sess)
+        elif ats == "ashby":
+            jobs = fetch_ashby_jobs(name, token, session=sess)
         else:
             logger.warning("Unsupported ATS '%s' for company %s", ats, name)
             continue

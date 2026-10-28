@@ -19,6 +19,7 @@ from src.fetchers import (
     fetch_greenhouse_jobs,
     fetch_lever_jobs,
     fetch_smartrecruiters_jobs,
+    fetch_ashby_jobs,
 )
 from src.filter import (
     filter_job,
@@ -331,3 +332,35 @@ class TestFetchers:
         jobs = fetch_smartrecruiters_jobs("PropertyFinder", "PropertyFinder", session=mock_session)
         assert len(jobs) == 1
         assert jobs[0]["role"] == "Staff Data Engineer"
+
+    @patch("requests.Session")
+    def test_fetch_ashby_jobs(self, mock_session_cls):
+        mock_session = MagicMock()
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = {
+            "jobs": [
+                {
+                    "id": "ash-1",
+                    "title": "Backend Engineer",
+                    "location": "Dubai",
+                    "publishedAt": "2026-10-26T00:00:00Z",
+                    "jobUrl": "https://jobs.ashbyhq.com/ziina/ash-1",
+                    "descriptionPlain": "Building APIs",
+                },
+                {
+                    "id": "ash-2",
+                    "title": "Chef",
+                    "location": "Dubai",
+                    "publishedAt": "2026-10-26T00:00:00Z",
+                    "jobUrl": "https://jobs.ashbyhq.com/ziina/ash-2",
+                    "descriptionPlain": "Cooking",
+                },
+            ]
+        }
+        mock_session.get.return_value = mock_resp
+
+        jobs = fetch_ashby_jobs("Ziina", "ziina", session=mock_session)
+        assert len(jobs) == 1
+        assert jobs[0]["role"] == "Backend Engineer"
+        assert jobs[0]["source"] == "ashby"
