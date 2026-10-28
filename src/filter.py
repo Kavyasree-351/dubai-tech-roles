@@ -94,9 +94,39 @@ INTERNSHIP_ROLE_PATTERNS: List[str] = [
     r"\bco-op\b",
     r"\bcoop\b",
     r"\bcampus\b",
+    r"\bstudent\b",
+    r"\bstudents\b",
+    r"\bundergraduate\b",
+    r"\bundergraduates\b",
+    r"\bundergrad\b",
     r"\bjunior\b",
     r"\bentry level\b",
     r"\bentry-level\b",
+    r"\bapm\b",
+    r"\bassociate product manager\b",
+    r"\bassociate project manager\b",
+    r"\bassociate project coordinator\b",
+]
+
+# Patterns for Product Management and Associate Project Management (intern/early-career scope)
+PRODUCT_AND_PROJECT_PATTERNS: List[str] = [
+    r"\bproduct manag\w*\b",
+    r"\bproduct manager\b",
+    r"\bassociate product manager\b",
+    r"\bapm\b",
+    r"\bproduct intern\b",
+    r"\bproduct internship\b",
+    r"\bproduct analyst\b",
+    r"\bproduct owner\b",
+    r"\bproject manag\w*\b",
+    r"\bproject manager\b",
+    r"\bassociate project manager\b",
+    r"\bproject intern\b",
+    r"\bproject internship\b",
+    r"\bproject coordinator\b",
+    r"\btechnical project\b",
+    r"\bprogram manager\b",
+    r"\bprogram management\b",
 ]
 
 # Senior / executive exclusion patterns for early career filtering
@@ -291,18 +321,50 @@ def matches_internship_or_early_grad_role(
 
 
 def categorize_tech_role(title: Optional[str]) -> str:
-    """Assign a normalized technology discipline category to a job title.
+    """Assign a normalized technology, product, or project discipline category to a job title.
 
     Disciplines:
     1. Software Engineering
     2. AI & Machine Learning
     3. Data Science & Engineering
     4. Quantitative Finance
+    5. Product Management
+    6. Associate Project Management
     """
     if not title:
         return "Software Engineering"
 
     t = title.lower()
+
+    # Product Management
+    if any(
+        k in t
+        for k in [
+            "product manag",
+            "product intern",
+            "product analyst",
+            "associate product",
+            "apm",
+            "product owner",
+            "product track",
+        ]
+    ):
+        return "Product Management"
+
+    # Associate Project Management
+    if any(
+        k in t
+        for k in [
+            "project manag",
+            "project intern",
+            "project coordinator",
+            "associate project",
+            "technical project",
+            "program manager",
+            "program management",
+        ]
+    ):
+        return "Associate Project Management"
 
     # Quantitative Finance & Trading
     if any(k in t for k in ["quant", "quantitative", "trader", "trading", "algorithmic"]):
@@ -326,8 +388,8 @@ def filter_internship_job(job: Dict[str, Any]) -> bool:
     Checks:
     1. Not an Emiratisation/National-only quota listing.
     2. Located in Dubai, UAE, or valid remote.
-    3. Matches target technology disciplines (SWE, AI/ML, Data, Quant).
-    4. Explicitly designed for interns, trainees, students, or early graduates.
+    3. Matches target disciplines (SWE, AI/ML, Data, Quant, Product Management, Associate Project Management).
+    4. Explicitly designed for interns, trainees, students, undergraduates, or early graduates.
 
     Args:
         job: Dictionary containing job properties (role/title, location, description, etc.).
@@ -347,12 +409,18 @@ def filter_internship_job(job: Dict[str, Any]) -> bool:
     if not matches_target_location(location):
         return False
 
-    # 3. Early Career / Internship match
+    # 3. Early Career / Internship / Student match
     if not matches_internship_or_early_grad_role(title, description):
         return False
 
-    # 4. Tech Discipline match
-    if not matches_target_role(title):
+    # 4. Tech / Product / Project Discipline match
+    matches_tech = matches_target_role(title)
+    title_lower = title.lower()
+    matches_pm = any(
+        re.search(p, title_lower, re.IGNORECASE) for p in PRODUCT_AND_PROJECT_PATTERNS
+    )
+
+    if not (matches_tech or matches_pm):
         # Fallback check on description if title is general like "Tamara Internship Program"
         if description and any(
             k in description.lower()
@@ -364,10 +432,13 @@ def filter_internship_job(job: Dict[str, Any]) -> bool:
                 "quantitative",
                 "backend",
                 "frontend",
+                "product",
+                "project",
             ]
         ):
             return True
         return False
 
     return True
+
 

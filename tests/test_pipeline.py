@@ -387,17 +387,27 @@ class TestInternshipFilter:
             ("Technology Graduate Trainee", True),
             ("Data Science Intern", True),
             ("Software Engineer Apprentice", True),
+            ("Associate Product Manager", True),
+            ("APM", True),
+            ("Product Management Intern", True),
+            ("Associate Project Manager", True),
+            ("Project Management Intern", True),
+            ("Technical Project Coordinator Intern", True),
             # Non-intern standard roles should return False
             ("Software Engineer", False),
             ("Backend Engineer", False),
             ("Data Scientist", False),
             ("Quantitative Researcher", False),
+            ("Product Manager", False),
+            ("Project Manager", False),
             # Senior/lead roles should return False even if keywords resemble
             ("Senior Backend Engineer", False),
             ("Lead Data Scientist", False),
             ("Principal AI Architect", False),
             ("Staff Machine Learning Engineer", False),
             ("Director of Engineering", False),
+            ("Senior Product Manager", False),
+            ("Lead Project Manager", False),
         ],
     )
     def test_matches_internship_or_early_grad_role(self, title, expected):
@@ -415,6 +425,12 @@ class TestInternshipFilter:
             ("Software Engineer: Intern/New Grad", "Software Engineering"),
             ("Full Stack Developer Intern", "Software Engineering"),
             ("DevOps Engineer Trainee", "Software Engineering"),
+            ("Product Management Intern", "Product Management"),
+            ("Associate Product Manager", "Product Management"),
+            ("APM - Early Career", "Product Management"),
+            ("Associate Project Manager", "Associate Project Management"),
+            ("Project Management Intern", "Associate Project Management"),
+            ("Technical Project Coordinator Intern", "Associate Project Management"),
         ],
     )
     def test_categorize_tech_role(self, title, expected_category):
@@ -427,6 +443,23 @@ class TestInternshipFilter:
             "description": "Develop high-scale cloud backend services.",
         }
         assert filter_internship_job(job) is True
+
+    def test_filter_internship_job_valid_pm(self):
+        job = {
+            "role": "Associate Product Manager",
+            "location": "Dubai, UAE",
+            "description": "Drive product roadmaps for fintech solutions.",
+        }
+        assert filter_internship_job(job) is True
+
+    def test_filter_internship_job_valid_project(self):
+        job = {
+            "role": "Project Management Intern",
+            "location": "Dubai, UAE",
+            "description": "Coordinate agile engineering delivery sprints.",
+        }
+        assert filter_internship_job(job) is True
+
 
     def test_filter_internship_job_blocks_emiratisation(self):
         job = {
