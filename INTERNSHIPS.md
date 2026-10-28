@@ -4,9 +4,9 @@
 
 **A curated, production-ready directory tracking Software Engineering, AI/ML, Data Science, Quantitative Finance, Product Management, and Associate Project Management internships & early career opportunities across Dubai and the United Arab Emirates — updated directly in this document every single day.**
 
-[![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
-[![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
-[![Active Roles](https://img.shields.io/badge/Active_Internships-17-purple?style=flat-square&logo=target)](data/internships.json)
+[![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
+[![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
+[![Active Roles](https://img.shields.io/badge/Active_Internships-15-purple?style=flat-square&logo=target)](data/internships.json)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-28-brightgreen?style=flat-square&logo=clock)](data/internships.json)
 [![Target Audience](https://img.shields.io/badge/Target-Students_%26_Undergrads-orange?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Full Directory](https://img.shields.io/badge/All_Tech_Roles-README.md-blue?style=flat-square&logo=readme)](README.md)
@@ -21,7 +21,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Active Intern & Graduate Roles** | `17` verified positions |
+| **Active Intern & Graduate Roles** | `15` verified positions |
 | **Target Candidate Profile** | Students, Undergraduates, Master's, PhD & Fresh Graduates (0–2 YOE) |
 | **Core Disciplines** | SWE, AI/ML, Data Science, Quant Trading, Product Management, Associate Project Management |
 | **Geographic Scope** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (ADGM, Hub71), UAE Remote |
@@ -52,8 +52,6 @@
 | **Vatic Labs** | AI Research & Quantitative Analyst Trainee (UAE Hub) | `Quantitative Finance` | Abu Dhabi, UAE | [Apply ↗](https://job-boards.greenhouse.io/vaticlabs) | 2026-09-20 |
 | **Revolut** | Graduate Applied AI / Software Engineer | `AI & Machine Learning` | Dubai, UAE | [Apply ↗](https://www.revolut.com/careers) | 2026-09-15 |
 | **Capgemini** | Insights & Data Graduate Consultant (GenAI & Analytics) | `AI & Machine Learning` | Dubai, UAE | [Apply ↗](https://www.capgemini.com/careers) | 2026-09-01 |
-| **Cobblestone Energy** | Commercial Graduate Scheme, Junior Data Scientist - Dubai, UAE | `Data Science & Engineering` | Dubai, UAE | [Apply ↗](https://job-boards.greenhouse.io/cobblestoneenergy/jobs/7772325003) | 2026-08-17 |
-| **Tamara** | Tamara Internship Program (Engineering & Data Tracks) | `Software Engineering` | Dubai, United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/tamara/jobs/4996993101) | 2026-08-01 |
 
 ---
 

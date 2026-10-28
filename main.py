@@ -6,7 +6,7 @@ Handles job fetching from ATS APIs and README / INTERNSHIPS markdown generation.
 import argparse
 import logging
 import sys
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from src.builder import build_readme, deduplicate_and_sort, load_listings, save_listings
 from src.fetchers import fetch_all_internships, fetch_all_jobs
@@ -20,9 +20,11 @@ logger = logging.getLogger("dubai-tech-roles")
 
 
 def merge_listings(
-    existing_jobs: List[Dict[str, Any]], new_jobs: List[Dict[str, Any]]
+    existing_jobs: List[Dict[str, Any]],
+    new_jobs: List[Dict[str, Any]],
+    max_age_days: Optional[int] = 60,
 ) -> List[Dict[str, Any]]:
-    """Merge existing jobs with newly fetched jobs without overriding manual listings."""
+    """Merge existing jobs with newly fetched jobs without overriding manual listings, pruning expired roles."""
     job_map: Dict[str, Dict[str, Any]] = {}
 
     # Load existing jobs first
@@ -42,7 +44,7 @@ def merge_listings(
         job_map[jid] = job
 
     merged = list(job_map.values())
-    return deduplicate_and_sort(merged)
+    return deduplicate_and_sort(merged, max_age_days=max_age_days)
 
 
 def run_pipeline(
@@ -56,6 +58,7 @@ def run_pipeline(
     internships_data_path: str = "data/internships.json",
     internships_template_path: str = "templates/INTERNSHIPS.template.md",
     internships_output_path: str = "INTERNSHIPS.md",
+    max_age_days: Optional[int] = 60,
 ) -> int:
     """Execute the pipeline steps based on provided options."""
     # 1. Main UAE Tech Roles Pipeline
@@ -67,13 +70,18 @@ def run_pipeline(
             logger.info("Initiating ATS job fetchers for experienced tech roles...")
             fetched_jobs = fetch_all_jobs()
             logger.info("Fetched %d relevant jobs from configured endpoints", len(fetched_jobs))
-            merged_jobs = merge_listings(existing_jobs, fetched_jobs)
+            merged_jobs = merge_listings(existing_jobs, fetched_jobs, max_age_days=max_age_days)
             save_listings(merged_jobs, data_path)
             logger.info("Updated %s with total %d listings", data_path, len(merged_jobs))
 
         if build:
             logger.info("Compiling README at %s...", output_path)
-            build_readme(template_path=template_path, data_path=data_path, output_path=output_path)
+            build_readme(
+                template_path=template_path,
+                data_path=data_path,
+                output_path=output_path,
+                max_age_days=max_age_days,
+            )
 
     # 2. Tech Internships & Early Graduate Pipeline
     if fetch_internships_flag or build_internships_flag:
@@ -91,7 +99,9 @@ def run_pipeline(
                 "Fetched %d relevant internships from configured endpoints",
                 len(fetched_internships),
             )
-            merged_internships = merge_listings(existing_internships, fetched_internships)
+            merged_internships = merge_listings(
+                existing_internships, fetched_internships, max_age_days=max_age_days
+            )
             save_listings(merged_internships, internships_data_path)
             logger.info(
                 "Updated %s with total %d listings",
@@ -105,6 +115,7 @@ def run_pipeline(
                 template_path=internships_template_path,
                 data_path=internships_data_path,
                 output_path=internships_output_path,
+                max_age_days=max_age_days,
             )
 
     logger.info("Pipeline execution completed successfully.")
@@ -187,6 +198,12 @@ def main() -> None:
         action="store_true",
         help="Execute both main tech roles and internships pipelines (fetch and compile both).",
     )
+    parser.add_argument(
+        "--max-age-days",
+        type=int,
+        default=60,
+        help="Maximum listing age in days before pruning expired jobs (default: 60, set to 0 to disable).",
+    )
 
     args = parser.parse_args()
 
@@ -208,6 +225,8 @@ def main() -> None:
         fetch_intern = False
         build_intern = True
 
+    max_age = None if args.max_age_days <= 0 else args.max_age_days
+
     try:
         exit_code = run_pipeline(
             fetch=fetch_main,
@@ -220,6 +239,7 @@ def main() -> None:
             internships_data_path=args.internships_data,
             internships_template_path=args.internships_template,
             internships_output_path=args.internships_output,
+            max_age_days=max_age,
         )
         sys.exit(exit_code)
     except Exception as e:

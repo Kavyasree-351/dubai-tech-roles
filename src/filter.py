@@ -1,5 +1,4 @@
-"""Filtering and matching engine for Dubai and UAE tech roles."""
-
+import datetime
 import re
 from typing import Any, Dict, List, Optional
 
@@ -237,16 +236,92 @@ def matches_target_location(location: Optional[str]) -> bool:
     return False
 
 
-def filter_job(job: Dict[str, Any]) -> bool:
+def is_job_expired(
+    date_posted: Optional[str],
+    max_age_days: int = 60,
+    reference_date: Optional[datetime.date] = None,
+) -> bool:
+    """Determine whether a job posting has exceeded the maximum retention period (expired).
+
+    Args:
+        date_posted: Date string (e.g. 'YYYY-MM-DD' or ISO format).
+        max_age_days: Maximum number of days a listing remains active (default 60 days).
+        reference_date: Optional date to calculate age against (defaults to today UTC).
+
+    Returns:
+        bool: True if date is valid and age in days > max_age_days; False otherwise.
+    """
+    if not date_posted or not isinstance(date_posted, str):
+        return False
+
+    date_str = date_posted.strip()
+    if not date_str:
+        return False
+
+    try:
+        if "T" in date_str:
+            date_str = date_str.split("T")[0]
+        elif " " in date_str:
+            date_str = date_str.split(" ")[0]
+
+        parsed_date = datetime.date.fromisoformat(date_str)
+    except (ValueError, TypeError):
+        return False
+
+    if reference_date is None:
+        reference_date = datetime.datetime.now(datetime.timezone.utc).date()
+
+    age_days = (reference_date - parsed_date).days
+    return age_days > max_age_days
+
+
+def filter_expired_jobs(
+    jobs: List[Dict[str, Any]],
+    max_age_days: int = 60,
+    reference_date: Optional[datetime.date] = None,
+    keep_manual: bool = False,
+) -> List[Dict[str, Any]]:
+    """Remove expired jobs from a listings collection.
+
+    Args:
+        jobs: List of job dictionaries.
+        max_age_days: Maximum age in days before a job is pruned (default 60).
+        reference_date: Optional reference date for age calculation.
+        keep_manual: If True, jobs with source == 'manual' will not be pruned.
+
+    Returns:
+        List[Dict[str, Any]]: Filtered active job listings within retention window.
+    """
+    active_jobs: List[Dict[str, Any]] = []
+    for job in jobs:
+        if keep_manual and job.get("source") == "manual":
+            active_jobs.append(job)
+            continue
+
+        date_posted = job.get("date_posted")
+        if is_job_expired(date_posted, max_age_days=max_age_days, reference_date=reference_date):
+            continue
+        active_jobs.append(job)
+    return active_jobs
+
+
+def filter_job(
+    job: Dict[str, Any],
+    max_age_days: Optional[int] = None,
+    reference_date: Optional[datetime.date] = None,
+) -> bool:
     """Complete validation pipeline for a single job listing.
 
     Checks:
     1. Not an Emiratisation/National-only quota listing.
     2. Matches target technology disciplines.
     3. Located in Dubai, UAE, or valid remote.
+    4. Optional expiration cutoff.
 
     Args:
         job: Dictionary containing job properties (role/title, location, description, etc.).
+        max_age_days: Optional maximum age in days before rejection.
+        reference_date: Optional reference date for age calculation.
 
     Returns:
         bool: True if the job should be included, False otherwise.
@@ -266,6 +341,15 @@ def filter_job(job: Dict[str, Any]) -> bool:
     # 3. Role check
     if not matches_target_role(title):
         return False
+
+    # 4. Optional Expiration check
+    if max_age_days is not None:
+        if is_job_expired(
+            job.get("date_posted"),
+            max_age_days=max_age_days,
+            reference_date=reference_date,
+        ):
+            return False
 
     return True
 
@@ -382,7 +466,11 @@ def categorize_tech_role(title: Optional[str]) -> str:
     return "Software Engineering"
 
 
-def filter_internship_job(job: Dict[str, Any]) -> bool:
+def filter_internship_job(
+    job: Dict[str, Any],
+    max_age_days: Optional[int] = None,
+    reference_date: Optional[datetime.date] = None,
+) -> bool:
     """Complete validation pipeline for an internship or early graduate job listing.
 
     Checks:
@@ -390,9 +478,12 @@ def filter_internship_job(job: Dict[str, Any]) -> bool:
     2. Located in Dubai, UAE, or valid remote.
     3. Matches target disciplines (SWE, AI/ML, Data, Quant, Product Management, Associate Project Management).
     4. Explicitly designed for interns, trainees, students, undergraduates, or early graduates.
+    5. Optional expiration cutoff.
 
     Args:
         job: Dictionary containing job properties (role/title, location, description, etc.).
+        max_age_days: Optional maximum age in days before rejection.
+        reference_date: Optional reference date for age calculation.
 
     Returns:
         bool: True if the internship should be included, False otherwise.
@@ -413,7 +504,16 @@ def filter_internship_job(job: Dict[str, Any]) -> bool:
     if not matches_internship_or_early_grad_role(title, description):
         return False
 
-    # 4. Tech / Product / Project Discipline match
+    # 4. Optional Expiration check
+    if max_age_days is not None:
+        if is_job_expired(
+            job.get("date_posted"),
+            max_age_days=max_age_days,
+            reference_date=reference_date,
+        ):
+            return False
+
+    # 5. Tech / Product / Project Discipline match
     matches_tech = matches_target_role(title)
     title_lower = title.lower()
     matches_pm = any(

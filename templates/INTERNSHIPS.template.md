@@ -4,8 +4,8 @@
 
 **A curated, production-ready directory tracking Software Engineering, AI/ML, Data Science, Quantitative Finance, Product Management, and Associate Project Management internships & early career opportunities across Dubai and the United Arab Emirates — updated directly in this document every single day.**
 
-[![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
-[![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
+[![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
+[![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
 [![Active Roles](https://img.shields.io/badge/Active_Internships-{{TOTAL_ROLES}}-purple?style=flat-square&logo=target)](data/internships.json)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-{{LAST_UPDATED}}-brightgreen?style=flat-square&logo=clock)](data/internships.json)
 [![Target Audience](https://img.shields.io/badge/Target-Students_%26_Undergrads-orange?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)

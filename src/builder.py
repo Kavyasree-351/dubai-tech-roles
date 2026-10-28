@@ -6,6 +6,8 @@ import logging
 import os
 from typing import Any, Dict, List, Optional
 
+from src.filter import filter_expired_jobs
+
 logger = logging.getLogger(__name__)
 
 
@@ -35,8 +37,13 @@ def save_listings(listings: List[Dict[str, Any]], data_path: str) -> None:
         f.write("\n")
 
 
-def deduplicate_and_sort(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Deduplicate jobs by job_id and sort chronologically by date_posted descending.
+def deduplicate_and_sort(
+    jobs: List[Dict[str, Any]],
+    max_age_days: Optional[int] = None,
+    reference_date: Optional[datetime.date] = None,
+    keep_manual: bool = False,
+) -> List[Dict[str, Any]]:
+    """Deduplicate jobs by job_id, prune expired roles if max_age_days is set, and sort chronologically.
 
     If job_id is missing, falls back to combination of company + role + location.
     """
@@ -55,6 +62,15 @@ def deduplicate_and_sort(jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         if jid not in seen_ids:
             seen_ids.add(jid)
             unique_jobs.append(job)
+
+    # Prune expired postings if retention cutoff is specified
+    if max_age_days is not None and max_age_days > 0:
+        unique_jobs = filter_expired_jobs(
+            unique_jobs,
+            max_age_days=max_age_days,
+            reference_date=reference_date,
+            keep_manual=keep_manual,
+        )
 
     # Sort newest first (chronological descending)
     def sort_key(item: Dict[str, Any]) -> str:
@@ -112,8 +128,11 @@ def build_readme(
     data_path: str = "data/listings.json",
     output_path: str = "README.md",
     include_category: Optional[bool] = None,
+    max_age_days: Optional[int] = 60,
+    reference_date: Optional[datetime.date] = None,
+    keep_manual: bool = False,
 ) -> str:
-    """Parse listings, sort and deduplicate, render README template, and save to output."""
+    """Parse listings, sort and deduplicate, prune expired postings, render README template, and save to output."""
     if not os.path.exists(template_path):
         raise FileNotFoundError(f"Template not found at {template_path}")
 
@@ -121,7 +140,22 @@ def build_readme(
         template_content = f.read()
 
     listings = load_listings(data_path)
-    cleaned_jobs = deduplicate_and_sort(listings)
+    cleaned_jobs = deduplicate_and_sort(
+        listings,
+        max_age_days=max_age_days,
+        reference_date=reference_date,
+        keep_manual=keep_manual,
+    )
+
+    if max_age_days is not None and max_age_days > 0:
+        pruned_count = len(listings) - len(cleaned_jobs)
+        if pruned_count > 0:
+            logger.info(
+                "Pruned %d expired role(s) (> %d days old) from %s",
+                pruned_count,
+                max_age_days,
+                data_path,
+            )
 
     # Also persist deduplicated and sorted data back to listings.json
     save_listings(cleaned_jobs, data_path)

@@ -3,6 +3,7 @@
 Tests filtering logic, Emiratisation exclusions, builder rendering, and ATS fetchers.
 """
 
+import datetime
 import json
 from unittest.mock import MagicMock, patch
 import pytest
@@ -23,9 +24,11 @@ from src.fetchers import (
 )
 from src.filter import (
     categorize_tech_role,
+    filter_expired_jobs,
     filter_internship_job,
     filter_job,
     is_emiratisation_role,
+    is_job_expired,
     matches_internship_or_early_grad_role,
     matches_target_location,
     matches_target_role,
@@ -506,4 +509,148 @@ class TestInternshipFilter:
         ]
         table = generate_markdown_table(jobs, include_category=True)
         assert "| **Asula Labs** | Software Engineer: Intern/New Grad | `Software Engineering` | Dubai, UAE | [Apply ↗](https://jobs.ashbyhq.com/asula) | 2026-10-28 |" in table
+
+
+# ==========================================
+# 8. Expired Job Cleanup & Age Retention Tests
+# ==========================================
+class TestJobExpirationFilter:
+    def test_is_job_expired_cases(self):
+        ref_date = datetime.date(2026, 10, 28)
+
+        # 10 days old -> active
+        assert is_job_expired("2026-10-18", max_age_days=60, reference_date=ref_date) is False
+        # Exactly 60 days old -> active
+        assert is_job_expired("2026-08-29", max_age_days=60, reference_date=ref_date) is False
+        # 61 days old -> expired
+        assert is_job_expired("2026-08-28", max_age_days=60, reference_date=ref_date) is True
+        # 180 days old -> expired
+        assert is_job_expired("2026-04-21", max_age_days=60, reference_date=ref_date) is True
+        # 1 year old -> expired
+        assert is_job_expired("2025-10-28", max_age_days=60, reference_date=ref_date) is True
+        # Future date -> active
+        assert is_job_expired("2026-10-30", max_age_days=60, reference_date=ref_date) is False
+
+    def test_is_job_expired_edge_cases(self):
+        ref_date = datetime.date(2026, 10, 28)
+        # None or empty
+        assert is_job_expired(None, max_age_days=60, reference_date=ref_date) is False
+        assert is_job_expired("", max_age_days=60, reference_date=ref_date) is False
+        assert is_job_expired("not-a-date", max_age_days=60, reference_date=ref_date) is False
+
+        # ISO timestamp with T
+        assert is_job_expired("2026-10-25T14:30:00Z", max_age_days=60, reference_date=ref_date) is False
+        assert is_job_expired("2026-05-01T08:00:00Z", max_age_days=60, reference_date=ref_date) is True
+
+    def test_filter_expired_jobs(self):
+        ref_date = datetime.date(2026, 10, 28)
+        jobs = [
+            {"job_id": "fresh-1", "role": "SWE", "date_posted": "2026-10-25", "source": "lever"},
+            {"job_id": "old-1", "role": "SWE", "date_posted": "2026-04-21", "source": "ashby"},
+            {"job_id": "old-manual", "role": "SWE", "date_posted": "2026-04-21", "source": "manual"},
+        ]
+
+        # Prunes old jobs by default
+        filtered = filter_expired_jobs(jobs, max_age_days=60, reference_date=ref_date, keep_manual=False)
+        assert len(filtered) == 1
+        assert filtered[0]["job_id"] == "fresh-1"
+
+        # Preserves manual listings if keep_manual is True
+        filtered_keep_manual = filter_expired_jobs(jobs, max_age_days=60, reference_date=ref_date, keep_manual=True)
+        assert len(filtered_keep_manual) == 2
+        assert {j["job_id"] for j in filtered_keep_manual} == {"fresh-1", "old-manual"}
+
+    def test_filter_job_with_max_age_days(self):
+        ref_date = datetime.date(2026, 10, 28)
+        fresh_job = {
+            "role": "Software Engineer",
+            "location": "Dubai, UAE",
+            "date_posted": "2026-10-20",
+        }
+        old_job = {
+            "role": "Software Engineer",
+            "location": "Dubai, UAE",
+            "date_posted": "2026-04-01",
+        }
+
+        # Fresh job passes
+        assert filter_job(fresh_job, max_age_days=60, reference_date=ref_date) is True
+        # Old job fails when max_age_days is specified
+        assert filter_job(old_job, max_age_days=60, reference_date=ref_date) is False
+        # Old job passes if max_age_days is None (backward compatibility)
+        assert filter_job(old_job, max_age_days=None, reference_date=ref_date) is True
+
+    def test_filter_internship_job_with_max_age_days(self):
+        ref_date = datetime.date(2026, 10, 28)
+        fresh_internship = {
+            "role": "Software Engineer Intern",
+            "location": "Dubai, UAE",
+            "date_posted": "2026-10-25",
+        }
+        old_internship = {
+            "role": "Software Engineer Intern",
+            "location": "Dubai, UAE",
+            "date_posted": "2026-06-01",
+        }
+
+        assert filter_internship_job(fresh_internship, max_age_days=60, reference_date=ref_date) is True
+        assert filter_internship_job(old_internship, max_age_days=60, reference_date=ref_date) is False
+        assert filter_internship_job(old_internship, max_age_days=None, reference_date=ref_date) is True
+
+    def test_deduplicate_and_sort_with_expiration(self):
+        ref_date = datetime.date(2026, 10, 28)
+        raw = [
+            {"job_id": "j1", "company": "A", "role": "SWE", "date_posted": "2026-10-25"},
+            {"job_id": "j2", "company": "B", "role": "SWE", "date_posted": "2026-05-10"},
+        ]
+        result = deduplicate_and_sort(raw, max_age_days=60, reference_date=ref_date)
+        assert len(result) == 1
+        assert result[0]["job_id"] == "j1"
+
+    def test_build_readme_prunes_expired(self, tmp_path):
+        ref_date = datetime.date(2026, 10, 28)
+        template_file = tmp_path / "README.template.md"
+        data_file = tmp_path / "listings.json"
+        output_file = tmp_path / "README.md"
+
+        template_file.write_text(
+            "# Dubai Roles\nTotal: {{TOTAL_ROLES}}\nUpdated: {{LAST_UPDATED}}\n\n{{TABLE_ROWS}}\n",
+            encoding="utf-8",
+        )
+        sample_data = [
+            {
+                "job_id": "fresh-1",
+                "company": "Company A",
+                "role": "Backend Engineer",
+                "location": "Dubai",
+                "apply_url": "https://a.com",
+                "date_posted": "2026-10-20",
+            },
+            {
+                "job_id": "stale-1",
+                "company": "Company B",
+                "role": "Frontend Engineer",
+                "location": "Dubai",
+                "apply_url": "https://b.com",
+                "date_posted": "2026-05-01",
+            },
+        ]
+        data_file.write_text(json.dumps(sample_data), encoding="utf-8")
+
+        rendered = build_readme(
+            template_path=str(template_file),
+            data_path=str(data_file),
+            output_path=str(output_file),
+            max_age_days=60,
+            reference_date=ref_date,
+        )
+
+        assert "Total: 1" in rendered
+        assert "Backend Engineer" in rendered
+        assert "Frontend Engineer" not in rendered
+
+        # Verify data_file on disk was also updated to prune stale-1
+        updated_data = json.loads(data_file.read_text(encoding="utf-8"))
+        assert len(updated_data) == 1
+        assert updated_data[0]["job_id"] == "fresh-1"
 

@@ -4,9 +4,9 @@
 
 **A curated, production-ready directory tracking Software Engineering, AI, ML, Data Science, and Quantitative positions across Dubai and the United Arab Emirates — updated directly in this README every single day.**
 
-[![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
-[![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg)](https://github.com/Kavyasree-351/dubai-tech-roles/actions)
-[![Active Roles](https://img.shields.io/badge/Active_Roles-21-blue?style=flat-square&logo=target)](data/listings.json)
+[![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
+[![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
+[![Active Roles](https://img.shields.io/badge/Active_Roles-13-blue?style=flat-square&logo=target)](data/listings.json)
 [![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-28-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
@@ -25,7 +25,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Active Tech Roles** | `21` verified positions |
+| **Total Active Tech Roles** | `13` verified positions |
 | **Last Synchronized** | `2026-10-28` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
@@ -52,14 +52,6 @@
 | **Fireblocks** | Solution Architect, UAE | Dubai | [Apply ↗](https://www.fireblocks.com/careers/position?gh_jid=4700431006) | 2026-10-01 |
 | **Rain** | Site Reliability Engineer | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/f4fc9289-e16d-4d4a-afb7-deedab74d3ac) | 2026-09-14 |
 | **Rain** | Software Engineer - Wallets | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/6393bceb-88cf-4806-a51c-401be580c59e) | 2026-09-03 |
-| **Cohere** | Solutions Architect - UAE | Dubai | [Apply ↗](https://jobs.ashbyhq.com/cohere/f154a1cb-b7c1-4f74-ac50-04ef9dcfc9e0) | 2026-08-19 |
-| **Cobblestone Energy** | Commercial Graduate Scheme, Junior Data Scientist - Dubai, UAE | Dubai, UAE | [Apply ↗](https://job-boards.greenhouse.io/cobblestoneenergy/jobs/7772325003) | 2026-08-17 |
-| **Ziina** | Backend Engineer, Payments Platform | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/b52d240f-2ccb-4aea-800b-623e9ca8ae09) | 2026-08-12 |
-| **Ziina** | Senior Backend Engineer, Payments Experience | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/688eb0ce-a666-4828-98b3-cd2239535744) | 2026-08-12 |
-| **Ziina** | Full-Stack Engineer (Internal Tools) | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/fba4d650-5f20-4792-9ae7-472ef447b768) | 2026-08-11 |
-| **Ziina** | Senior Platform Engineer (Infrastructure) | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/0e2861ef-b501-4591-88bd-f418a63620d8) | 2026-04-21 |
-| **Ziina** | Platform Engineer (Developer Enablement) | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/b72caf1d-e9a0-483f-9fb9-4d1cd7f28ecb) | 2026-04-21 |
-| **Ziina** | Senior Full-Stack Engineer (Web) | Dubai | [Apply ↗](https://jobs.ashbyhq.com/ziina/e1f0f84a-2867-45a6-967d-44462c66ce59) | 2025-10-28 |
 
 ---
 

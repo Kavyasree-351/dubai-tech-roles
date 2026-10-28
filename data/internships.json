@@ -148,25 +148,5 @@
     "apply_url": "https://www.capgemini.com/careers",
     "date_posted": "2026-09-01",
     "source": "manual"
-  },
-  {
-    "job_id": "gh-cobblestoneenergy-7772325003",
-    "company": "Cobblestone Energy",
-    "role": "Commercial Graduate Scheme, Junior Data Scientist - Dubai, UAE",
-    "category": "Data Science & Engineering",
-    "location": "Dubai, UAE",
-    "apply_url": "https://job-boards.greenhouse.io/cobblestoneenergy/jobs/7772325003",
-    "date_posted": "2026-08-17",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-tamara-4996993101",
-    "company": "Tamara",
-    "role": "Tamara Internship Program (Engineering & Data Tracks)",
-    "category": "Software Engineering",
-    "location": "Dubai, United Arab Emirates",
-    "apply_url": "https://job-boards.eu.greenhouse.io/tamara/jobs/4996993101",
-    "date_posted": "2026-08-01",
-    "source": "greenhouse"
   }
 ]
