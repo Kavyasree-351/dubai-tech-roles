@@ -18,21 +18,12 @@
     "source": "greenhouse"
   },
   {
-    "job_id": "sr-DeliveryHero-744000157994040",
-    "company": "Delivery Hero",
-    "role": "Sr. Manager Data Science (Dark Stores Intelligence)",
-    "location": "Dubai, Dubai, ae",
-    "apply_url": "https://jobs.smartrecruiters.com/DeliveryHero/744000157994040",
-    "date_posted": "2026-10-27",
-    "source": "smartrecruiters"
-  },
-  {
     "job_id": "gh-binance-5002465101",
     "company": "Binance",
     "role": "Backend Architect, Binance Pay & Card",
     "location": "Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates",
     "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002465101",
-    "date_posted": "2026-10-26",
+    "date_posted": "2026-10-28",
     "source": "greenhouse"
   },
   {
@@ -41,7 +32,7 @@
     "role": "Full Stack Engineer (Frontend Oriented) — Identity & Security",
     "location": "Hong Kong; Singapore; Taiwan; United Arab Emirates",
     "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5007086101",
-    "date_posted": "2026-10-25",
+    "date_posted": "2026-10-28",
     "source": "greenhouse"
   },
   {
@@ -50,8 +41,89 @@
     "role": "Senior Risk Strategist, Market Manipulation (Trading Risk)",
     "location": "Australia; Hong Kong; Singapore; United Arab Emirates",
     "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5011782101",
-    "date_posted": "2026-10-23",
+    "date_posted": "2026-10-28",
     "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-binance-5002258101",
+    "company": "Binance",
+    "role": "Binance Accelerator Program - Data Scientist, Analytics",
+    "location": "Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002258101",
+    "date_posted": "2026-10-28",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-bybit-4996982101",
+    "company": "Bybit",
+    "role": "Lead Backend Engineer, Trading Risk",
+    "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
+    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4996982101",
+    "date_posted": "2026-10-28",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-binance-5002663101",
+    "company": "Binance",
+    "role": "DevOps Engineer, Blockchain Infra (Fully Remote)",
+    "location": "Europe; United Arab Emirates; United Kingdom",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002663101",
+    "date_posted": "2026-10-28",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-bybit-4905494101",
+    "company": "Bybit",
+    "role": "Principal AI Agent Development Engineer/Architect",
+    "location": "Abu Dhabi, UAE; Hong Kong SAR; Kuala Lumpur, Malaysia",
+    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4905494101",
+    "date_posted": "2026-10-28",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-bybit-4962936101",
+    "company": "Bybit",
+    "role": "Principal Backend Development Engineer(C++)",
+    "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
+    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4962936101",
+    "date_posted": "2026-10-28",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-bybit-4975178101",
+    "company": "Bybit",
+    "role": "Senior Data Analyst",
+    "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
+    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4975178101",
+    "date_posted": "2026-10-28",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-bybit-4909003101",
+    "company": "Bybit",
+    "role": "Senior Data Analyst - Growth/Marketing",
+    "location": "Abu Dhabi, UAE; Hong Kong SAR; Kuala Lumpur, Malaysia",
+    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4909003101",
+    "date_posted": "2026-10-28",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-bybit-4968567101",
+    "company": "Bybit",
+    "role": "Senior Product Manager – Trading & Onchain",
+    "location": "Abu Dhabi, UAE",
+    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4968567101",
+    "date_posted": "2026-10-28",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "sr-DeliveryHero-744000157994040",
+    "company": "Delivery Hero",
+    "role": "Sr. Manager Data Science (Dark Stores Intelligence)",
+    "location": "Dubai, Dubai, ae",
+    "apply_url": "https://jobs.smartrecruiters.com/DeliveryHero/744000157994040",
+    "date_posted": "2026-10-27",
+    "source": "smartrecruiters"
   },
   {
     "job_id": "ashby-analog-1a92a5c6-5bd9-4cee-855e-47a95bab6c16",
@@ -78,78 +150,6 @@
     "location": "Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo",
     "apply_url": "https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002",
     "date_posted": "2026-10-22",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-binance-5002258101",
-    "company": "Binance",
-    "role": "Binance Accelerator Program - Data Scientist, Analytics",
-    "location": "Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002258101",
-    "date_posted": "2026-10-19",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-bybit-4996982101",
-    "company": "Bybit",
-    "role": "Lead Backend Engineer, Trading Risk",
-    "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
-    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4996982101",
-    "date_posted": "2026-10-19",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-binance-5002663101",
-    "company": "Binance",
-    "role": "DevOps Engineer, Blockchain Infra (Fully Remote)",
-    "location": "Europe; United Arab Emirates; United Kingdom",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002663101",
-    "date_posted": "2026-10-15",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-bybit-4905494101",
-    "company": "Bybit",
-    "role": "Principal AI Agent Development Engineer/Architect",
-    "location": "Abu Dhabi, UAE; Hong Kong SAR; Kuala Lumpur, Malaysia",
-    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4905494101",
-    "date_posted": "2026-10-14",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-bybit-4962936101",
-    "company": "Bybit",
-    "role": "Principal Backend Development Engineer(C++)",
-    "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
-    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4962936101",
-    "date_posted": "2026-10-14",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-bybit-4975178101",
-    "company": "Bybit",
-    "role": "Senior Data Analyst",
-    "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
-    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4975178101",
-    "date_posted": "2026-10-14",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-bybit-4909003101",
-    "company": "Bybit",
-    "role": "Senior Data Analyst - Growth/Marketing",
-    "location": "Abu Dhabi, UAE; Hong Kong SAR; Kuala Lumpur, Malaysia",
-    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4909003101",
-    "date_posted": "2026-10-14",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-bybit-4968567101",
-    "company": "Bybit",
-    "role": "Senior Product Manager – Trading & Onchain",
-    "location": "Abu Dhabi, UAE",
-    "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4968567101",
-    "date_posted": "2026-10-14",
     "source": "greenhouse"
   },
   {
