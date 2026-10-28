@@ -7,7 +7,7 @@
 [![Automated Scraper](https://github.com/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg)](https://github.com/dubai-tech-roles/actions)
 [![README Builder](https://github.com/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg)](https://github.com/dubai-tech-roles/actions)
 [![Active Roles](https://img.shields.io/badge/Active_Roles-3-blue?style=flat-square&logo=target)](data/listings.json)
-[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-27-brightgreen?style=flat-square&logo=clock)](data/listings.json)
+[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-28-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
@@ -23,7 +23,7 @@
 | :--- | :--- |
 | **Total Active Tech Roles** | `3` open positions |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
-| **Last Synchronized** | `2026-10-27` |
+| **Last Synchronized** | `2026-10-28` |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
 
 ---
