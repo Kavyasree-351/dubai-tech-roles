@@ -9,7 +9,7 @@
 [![Active Roles](https://img.shields.io/badge/Active_Roles-3-blue?style=flat-square&logo=target)](data/listings.json)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-28-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+
 
 [**Explore Listings**](#-open-tech-roles-in-the-uae) • [**Filtering Methodology**](#-filtering-methodology) • [**How to Contribute**](#-contributing) • [**Automated Scraper**](#-automation--cicd)
 
@@ -75,6 +75,4 @@ Check out our [Contribution Guidelines](CONTRIBUTING.md) for data schema details
 
 ---
 
-## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
