@@ -6,8 +6,8 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Internships-21-purple?style=flat-square&logo=target)](data/internships.json)
-[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-28-brightgreen?style=flat-square&logo=clock)](data/internships.json)
+[![Active Roles](https://img.shields.io/badge/Active_Internships-22-purple?style=flat-square&logo=target)](data/internships.json)
+[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-29-brightgreen?style=flat-square&logo=clock)](data/internships.json)
 [![Target Audience](https://img.shields.io/badge/Target-Students_%26_Undergrads-orange?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Full Directory](https://img.shields.io/badge/All_Tech_Roles-README.md-blue?style=flat-square&logo=readme)](README.md)
 
@@ -21,12 +21,12 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Active Intern & Graduate Roles** | `21` verified positions |
+| **Active Intern & Graduate Roles** | `22` verified positions |
 | **Target Candidate Profile** | Students, Undergraduates, Master's, PhD & Fresh Graduates (0–2 YOE) |
 | **Core Disciplines** | SWE, AI/ML, Data Science, Quant Trading, Product Management, Associate Project Management |
 | **Geographic Scope** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (ADGM, Hub71), UAE Remote |
 | **Emiratisation Policy** | Excluded (Open-market positions for all domestic and international applicants) |
-| **Last Synchronized** | `2026-10-28` |
+| **Last Synchronized** | `2026-10-29` |
 | **Update Frequency** | **Every 6 Hours** (Automated via GitHub Actions) |
 
 ---
@@ -37,6 +37,7 @@
 
 | Company | Role | Discipline | Location | Apply Link | Date Posted |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Binance** | Binance Accelerator Program - Sanction Operations | `Software Engineering` | Australia; Hong Kong; New Zealand; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5006691101) | 2026-10-29 |
 | **Binance** | Binance Accelerator Program - TradFI Business Development | `Software Engineering` | Hong Kong; Malaysia; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002315101) | 2026-10-28 |
 | **Binance** | Binance Accelerator Program - Ads Implementation | `Software Engineering` | Hong Kong; India; Malaysia; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002743101) | 2026-10-28 |
 | **Binance** | Binance Accelerator Program - Internal Audit (Technology) | `Software Engineering` | Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002254101) | 2026-10-28 |
