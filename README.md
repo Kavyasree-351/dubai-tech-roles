@@ -39,14 +39,16 @@
 
 | Company | Role | Location | Apply Link | Date Posted |
 | :--- | :--- | :--- | :--- | :--- |
+| **Binance** | Backend Architect, Binance Pay & Card | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002465101) | 2026-10-30 |
+| **Binance** | Full Stack Engineer (Frontend Oriented) — Identity & Security | Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5007086101) | 2026-10-30 |
+| **Binance** | Senior Risk Strategist, Market Manipulation (Trading Risk) | Australia; Hong Kong; Singapore; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5011782101) | 2026-10-30 |
+| **Binance** | Binance Accelerator Program - Data Scientist, Analytics | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002258101) | 2026-10-30 |
+| **Binance** | DevOps Engineer, Blockchain Infra (Fully Remote) | Europe; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002663101) | 2026-10-30 |
+| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002) | 2026-10-30 |
+| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002) | 2026-10-30 |
 | **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996350101) | 2026-10-28 |
 | **Bybit** | Principal Backend Development Engineer (C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/5013054101) | 2026-10-28 |
-| **Binance** | Backend Architect, Binance Pay & Card | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002465101) | 2026-10-28 |
-| **Binance** | Full Stack Engineer (Frontend Oriented) — Identity & Security | Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5007086101) | 2026-10-28 |
-| **Binance** | Senior Risk Strategist, Market Manipulation (Trading Risk) | Australia; Hong Kong; Singapore; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5011782101) | 2026-10-28 |
-| **Binance** | Binance Accelerator Program - Data Scientist, Analytics | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002258101) | 2026-10-28 |
 | **Bybit** | Lead Backend Engineer, Trading Risk | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996982101) | 2026-10-28 |
-| **Binance** | DevOps Engineer, Blockchain Infra (Fully Remote) | Europe; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002663101) | 2026-10-28 |
 | **Bybit** | Principal AI Agent Development Engineer/Architect | Abu Dhabi, UAE; Hong Kong SAR; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4905494101) | 2026-10-28 |
 | **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4962936101) | 2026-10-28 |
 | **Bybit** | Senior Data Analyst | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4975178101) | 2026-10-28 |
@@ -54,8 +56,6 @@
 | **Bybit** | Senior Product Manager – Trading & Onchain | Abu Dhabi, UAE | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4968567101) | 2026-10-28 |
 | **Delivery Hero** | Sr. Manager Data Science (Dark Stores Intelligence) | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000157994040) | 2026-10-27 |
 | **Analog** | Distributed Systems Architect: Bare-Metal and High-Scale | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/1a92a5c6-5bd9-4cee-855e-47a95bab6c16) | 2026-10-22 |
-| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002) | 2026-10-22 |
-| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002) | 2026-10-22 |
 | **Analog** | Infrastructure Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/60f25aba-ba6e-44d8-bdf0-6dd40a2b4acb) | 2026-10-14 |
 | **Analog** | Security Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/b5f45f29-fcc6-485c-b3c1-11666bf4d916) | 2026-10-14 |
 | **Rain** | Security Engineer - AppSec | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/7e211b55-5069-45b2-8072-c6555a5b53cd) | 2026-10-05 |

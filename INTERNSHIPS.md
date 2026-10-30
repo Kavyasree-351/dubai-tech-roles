@@ -37,16 +37,16 @@
 
 | Company | Role | Discipline | Location | Apply Link | Date Posted |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Binance** | Binance Accelerator Program - Sanction Operations | `Software Engineering` | Australia; Hong Kong; New Zealand; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5006691101) | 2026-10-29 |
-| **Binance** | Binance Accelerator Program - Public Relations | `Software Engineering` | United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5012687101) | 2026-10-29 |
+| **Binance** | Binance Accelerator Program - Sanction Operations | `Software Engineering` | Australia; Hong Kong; New Zealand; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5006691101) | 2026-10-30 |
+| **Binance** | Binance Accelerator Program - Public Relations | `Software Engineering` | United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5012687101) | 2026-10-30 |
+| **Binance** | Binance Accelerator Program - TradFI Business Development | `Software Engineering` | Hong Kong; Malaysia; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002315101) | 2026-10-30 |
+| **Binance** | Binance Accelerator Program - Ads Implementation | `Software Engineering` | Hong Kong; India; Malaysia; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002743101) | 2026-10-30 |
+| **Binance** | Binance Accelerator Program - Internal Audit (Technology) | `Software Engineering` | Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002254101) | 2026-10-30 |
+| **Binance** | Binance Accelerator Program - VIP Sales | `Software Engineering` | Brazil; Colombia; Mexico; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002283101) | 2026-10-30 |
+| **Binance** | Binance Accelerator Program - Affiliate BD | `Software Engineering` | Singapore; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002599101) | 2026-10-30 |
+| **Binance** | Binance Accelerator Program - Data Scientist, Analytics | `Data Science & Engineering` | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002258101) | 2026-10-30 |
+| **Binance** | Binance Accelerator Program - Brand KOL | `Software Engineering` | Hong Kong; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002401101) | 2026-10-30 |
 | **Tamara** | Merchant Acquisition Intern | `Software Engineering` | Abu Dhabi, United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/tamara/jobs/5017363101) | 2026-10-29 |
-| **Binance** | Binance Accelerator Program - TradFI Business Development | `Software Engineering` | Hong Kong; Malaysia; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002315101) | 2026-10-28 |
-| **Binance** | Binance Accelerator Program - Ads Implementation | `Software Engineering` | Hong Kong; India; Malaysia; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002743101) | 2026-10-28 |
-| **Binance** | Binance Accelerator Program - Internal Audit (Technology) | `Software Engineering` | Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002254101) | 2026-10-28 |
-| **Binance** | Binance Accelerator Program - VIP Sales | `Software Engineering` | Brazil; Colombia; Mexico; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002283101) | 2026-10-28 |
-| **Binance** | Binance Accelerator Program - Affiliate BD | `Software Engineering` | Singapore; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002599101) | 2026-10-28 |
-| **Binance** | Binance Accelerator Program - Data Scientist, Analytics | `Data Science & Engineering` | Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002258101) | 2026-10-28 |
-| **Binance** | Binance Accelerator Program - Brand KOL | `Software Engineering` | Hong Kong; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002401101) | 2026-10-28 |
 | **Tamara** | Tamara Internship Program (Product & Design Tracks) | `Product Management` | Dubai, United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/tamara/jobs/4996993101) | 2026-10-25 |
 | **ByteDance / TikTok** | Product Project Intern (AI Platforms & Creator Tools) | `Product Management` | Dubai Internet City, Dubai, UAE | [Apply ↗](https://careers.tiktok.com) | 2026-10-22 |
 | **Revolut** | Associate Product Manager / Operations Intern | `Product Management` | Dubai, UAE | [Apply ↗](https://www.revolut.com/careers) | 2026-10-18 |

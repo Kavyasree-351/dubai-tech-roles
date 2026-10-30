@@ -1,5 +1,68 @@
 [
   {
+    "job_id": "gh-binance-5002465101",
+    "company": "Binance",
+    "role": "Backend Architect, Binance Pay & Card",
+    "location": "Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002465101",
+    "date_posted": "2026-10-30",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-binance-5007086101",
+    "company": "Binance",
+    "role": "Full Stack Engineer (Frontend Oriented) — Identity & Security",
+    "location": "Hong Kong; Singapore; Taiwan; United Arab Emirates",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5007086101",
+    "date_posted": "2026-10-30",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-binance-5011782101",
+    "company": "Binance",
+    "role": "Senior Risk Strategist, Market Manipulation (Trading Risk)",
+    "location": "Australia; Hong Kong; Singapore; United Arab Emirates",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5011782101",
+    "date_posted": "2026-10-30",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-binance-5002258101",
+    "company": "Binance",
+    "role": "Binance Accelerator Program - Data Scientist, Analytics",
+    "location": "Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002258101",
+    "date_posted": "2026-10-30",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-binance-5002663101",
+    "company": "Binance",
+    "role": "DevOps Engineer, Blockchain Infra (Fully Remote)",
+    "location": "Europe; United Arab Emirates; United Kingdom",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002663101",
+    "date_posted": "2026-10-30",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-point72-7318012002",
+    "company": "Point72",
+    "role": "Cubist Quantitative Researcher",
+    "location": "Dubai, London, Paris, Hong Kong, Sydney, Toronto",
+    "apply_url": "https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002",
+    "date_posted": "2026-10-30",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-point72-7045936002",
+    "company": "Point72",
+    "role": "Cubist Quantitative Researcher",
+    "location": "Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo",
+    "apply_url": "https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002",
+    "date_posted": "2026-10-30",
+    "source": "greenhouse"
+  },
+  {
     "job_id": "gh-bybit-4996350101",
     "company": "Bybit",
     "role": "Principal Backend Development Engineer(C++)",
@@ -18,56 +81,11 @@
     "source": "greenhouse"
   },
   {
-    "job_id": "gh-binance-5002465101",
-    "company": "Binance",
-    "role": "Backend Architect, Binance Pay & Card",
-    "location": "Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002465101",
-    "date_posted": "2026-10-28",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-binance-5007086101",
-    "company": "Binance",
-    "role": "Full Stack Engineer (Frontend Oriented) — Identity & Security",
-    "location": "Hong Kong; Singapore; Taiwan; United Arab Emirates",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5007086101",
-    "date_posted": "2026-10-28",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-binance-5011782101",
-    "company": "Binance",
-    "role": "Senior Risk Strategist, Market Manipulation (Trading Risk)",
-    "location": "Australia; Hong Kong; Singapore; United Arab Emirates",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5011782101",
-    "date_posted": "2026-10-28",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-binance-5002258101",
-    "company": "Binance",
-    "role": "Binance Accelerator Program - Data Scientist, Analytics",
-    "location": "Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002258101",
-    "date_posted": "2026-10-28",
-    "source": "greenhouse"
-  },
-  {
     "job_id": "gh-bybit-4996982101",
     "company": "Bybit",
     "role": "Lead Backend Engineer, Trading Risk",
     "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
     "apply_url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4996982101",
-    "date_posted": "2026-10-28",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-binance-5002663101",
-    "company": "Binance",
-    "role": "DevOps Engineer, Blockchain Infra (Fully Remote)",
-    "location": "Europe; United Arab Emirates; United Kingdom",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002663101",
     "date_posted": "2026-10-28",
     "source": "greenhouse"
   },
@@ -133,24 +151,6 @@
     "apply_url": "https://jobs.ashbyhq.com/analog/1a92a5c6-5bd9-4cee-855e-47a95bab6c16",
     "date_posted": "2026-10-22",
     "source": "ashby"
-  },
-  {
-    "job_id": "gh-point72-7318012002",
-    "company": "Point72",
-    "role": "Cubist Quantitative Researcher",
-    "location": "Dubai, London, Paris, Hong Kong, Sydney, Toronto",
-    "apply_url": "https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002",
-    "date_posted": "2026-10-22",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-point72-7045936002",
-    "company": "Point72",
-    "role": "Cubist Quantitative Researcher",
-    "location": "Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo",
-    "apply_url": "https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002",
-    "date_posted": "2026-10-22",
-    "source": "greenhouse"
   },
   {
     "job_id": "ashby-analog-60f25aba-ba6e-44d8-bdf0-6dd40a2b4acb",
