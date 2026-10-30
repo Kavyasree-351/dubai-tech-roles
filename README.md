@@ -8,7 +8,7 @@
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
 [![Active Roles](https://img.shields.io/badge/Active_Roles-28-blue?style=flat-square&logo=target)](data/listings.json)
 [![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
-[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-29-brightgreen?style=flat-square&logo=clock)](data/listings.json)
+[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-30-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
 [**🔥 View Open Roles**](#-open-tech-roles-in-the-uae-updated-daily) • [**🎓 Internships & Early Grads**](INTERNSHIPS.md) • [**🔄 Daily Sync Architecture**](#-how-daily-updates-work) • [**🎯 Filtering Methodology**](#-filtering-methodology) • [**🤝 Contributing**](#-contributing)
@@ -26,7 +26,7 @@
 | Metric | Status |
 | :--- | :--- |
 | **Total Active Tech Roles** | `28` verified positions |
-| **Last Synchronized** | `2026-10-29` |
+| **Last Synchronized** | `2026-10-30` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
 | **Update Frequency** | **Every 6 Hours** (automated via GitHub Actions) |
