@@ -7,7 +7,7 @@
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
 [![Active Roles](https://img.shields.io/badge/Active_Internships-24-purple?style=flat-square&logo=target)](data/internships.json)
-[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-30-brightgreen?style=flat-square&logo=clock)](data/internships.json)
+[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-31-brightgreen?style=flat-square&logo=clock)](data/internships.json)
 [![Target Audience](https://img.shields.io/badge/Target-Students_%26_Undergrads-orange?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Full Directory](https://img.shields.io/badge/All_Tech_Roles-README.md-blue?style=flat-square&logo=readme)](README.md)
 
@@ -26,7 +26,7 @@
 | **Core Disciplines** | SWE, AI/ML, Data Science, Quant Trading, Product Management, Associate Project Management |
 | **Geographic Scope** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (ADGM, Hub71), UAE Remote |
 | **Emiratisation Policy** | Excluded (Open-market positions for all domestic and international applicants) |
-| **Last Synchronized** | `2026-10-30` |
+| **Last Synchronized** | `2026-10-31` |
 | **Update Frequency** | **Every 6 Hours** (Automated via GitHub Actions) |
 
 ---
