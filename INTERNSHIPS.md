@@ -6,8 +6,8 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Internships-24-purple?style=flat-square&logo=target)](data/internships.json)
-[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-10-31-brightgreen?style=flat-square&logo=clock)](data/internships.json)
+[![Active Roles](https://img.shields.io/badge/Active_Internships-23-purple?style=flat-square&logo=target)](data/internships.json)
+[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-11-01-brightgreen?style=flat-square&logo=clock)](data/internships.json)
 [![Target Audience](https://img.shields.io/badge/Target-Students_%26_Undergrads-orange?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Full Directory](https://img.shields.io/badge/All_Tech_Roles-README.md-blue?style=flat-square&logo=readme)](README.md)
 
@@ -21,12 +21,12 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Active Intern & Graduate Roles** | `24` verified positions |
+| **Active Intern & Graduate Roles** | `23` verified positions |
 | **Target Candidate Profile** | Students, Undergraduates, Master's, PhD & Fresh Graduates (0–2 YOE) |
 | **Core Disciplines** | SWE, AI/ML, Data Science, Quant Trading, Product Management, Associate Project Management |
 | **Geographic Scope** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (ADGM, Hub71), UAE Remote |
 | **Emiratisation Policy** | Excluded (Open-market positions for all domestic and international applicants) |
-| **Last Synchronized** | `2026-10-31` |
+| **Last Synchronized** | `2026-11-01` |
 | **Update Frequency** | **Every 6 Hours** (Automated via GitHub Actions) |
 
 ---
@@ -60,7 +60,6 @@
 | **Schneider Electric** | Digital Project Management & Performance Intern | `Associate Project Management` | Dubai, UAE | [Apply ↗](https://www.se.com/ae/en/about-us/careers) | 2026-09-22 |
 | **Vatic Labs** | AI Research & Quantitative Analyst Trainee (UAE Hub) | `Quantitative Finance` | Abu Dhabi, UAE | [Apply ↗](https://job-boards.greenhouse.io/vaticlabs) | 2026-09-20 |
 | **Revolut** | Graduate Applied AI / Software Engineer | `AI & Machine Learning` | Dubai, UAE | [Apply ↗](https://www.revolut.com/careers) | 2026-09-15 |
-| **Capgemini** | Insights & Data Graduate Consultant (GenAI & Analytics) | `AI & Machine Learning` | Dubai, UAE | [Apply ↗](https://www.capgemini.com/careers) | 2026-09-01 |
 
 ---
 
