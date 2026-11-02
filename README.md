@@ -6,7 +6,7 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Roles-29-blue?style=flat-square&logo=target)](data/listings.json)
+[![Active Roles](https://img.shields.io/badge/Active_Roles-30-blue?style=flat-square&logo=target)](data/listings.json)
 [![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-11-02-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
@@ -25,7 +25,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Active Tech Roles** | `29` verified positions |
+| **Total Active Tech Roles** | `30` verified positions |
 | **Last Synchronized** | `2026-11-02` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
@@ -39,6 +39,7 @@
 
 | Company | Role | Location | Apply Link | Date Posted |
 | :--- | :--- | :--- | :--- | :--- |
+| **Lean Technologies** | Senior Software Engineer | Dubai, United Arab Emirates | [Apply ↗](https://jobs.ashbyhq.com/leantech/3e9d10c4-fd9c-4cc3-9fee-bfe6c15c76f0) | 2026-11-02 |
 | **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996350101) | 2026-11-01 |
 | **Bybit** | Principal Backend Development Engineer (C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/5013054101) | 2026-11-01 |
 | **Bybit** | Lead Backend Engineer, Trading Risk | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996982101) | 2026-11-01 |
