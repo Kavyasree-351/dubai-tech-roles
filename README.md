@@ -6,9 +6,9 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Roles-30-blue?style=flat-square&logo=target)](data/listings.json)
+[![Active Roles](https://img.shields.io/badge/Active_Roles-29-blue?style=flat-square&logo=target)](data/listings.json)
 [![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
-[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-11-02-brightgreen?style=flat-square&logo=clock)](data/listings.json)
+[![Last Updated](https://img.shields.io/badge/Last_Updated-2026-11-03-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
 [**🔥 View Open Roles**](#-open-tech-roles-in-the-uae-updated-daily) • [**🎓 Internships & Early Grads**](INTERNSHIPS.md) • [**🔄 Daily Sync Architecture**](#-how-daily-updates-work) • [**🎯 Filtering Methodology**](#-filtering-methodology) • [**🤝 Contributing**](#-contributing)
@@ -25,8 +25,8 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Active Tech Roles** | `30` verified positions |
-| **Last Synchronized** | `2026-11-02` |
+| **Total Active Tech Roles** | `29` verified positions |
+| **Last Synchronized** | `2026-11-03` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
 | **Update Frequency** | **Every 6 Hours** (automated via GitHub Actions) |
@@ -68,7 +68,6 @@
 | **Analog** | DevOps/Platform Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/a3e20901-3141-4193-9b56-c16d21836ec6) | 2026-09-24 |
 | **Analog** | Senior Frontend Engineer | Abu Dhabi | [Apply ↗](https://jobs.ashbyhq.com/analog/14ed4069-4577-45bd-be8f-a95bde3dc03d) | 2026-09-24 |
 | **Rain** | Site Reliability Engineer | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/f4fc9289-e16d-4d4a-afb7-deedab74d3ac) | 2026-09-14 |
-| **Rain** | Software Engineer - Wallets | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/6393bceb-88cf-4806-a51c-401be580c59e) | 2026-09-03 |
 
 ---
 
