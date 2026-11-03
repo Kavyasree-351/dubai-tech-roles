@@ -6,7 +6,7 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Roles-32-blue?style=flat-square&logo=target)](data/listings.json)
+[![Active Roles](https://img.shields.io/badge/Active_Roles-33-blue?style=flat-square&logo=target)](data/listings.json)
 [![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-11-03-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
@@ -25,7 +25,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Active Tech Roles** | `32` verified positions |
+| **Total Active Tech Roles** | `33` verified positions |
 | **Last Synchronized** | `2026-11-03` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
@@ -43,6 +43,7 @@
 | **Delivery Hero** | Software Engineer l - Backend | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159382315) | 2026-11-03 |
 | **Delivery Hero** | Senior Software Engineer - Backend | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159378779) | 2026-11-03 |
 | **Delivery Hero** | Software Engineer ll - Backend | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159376699) | 2026-11-03 |
+| **Rain** | Senior Security Engineer | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/6e303e8c-9d97-485a-9676-e0471e4bdc70) | 2026-11-03 |
 | **Lean Technologies** | Senior Software Engineer | Dubai, United Arab Emirates | [Apply ↗](https://jobs.ashbyhq.com/leantech/3e9d10c4-fd9c-4cc3-9fee-bfe6c15c76f0) | 2026-11-02 |
 | **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996350101) | 2026-11-01 |
 | **Bybit** | Principal Backend Development Engineer (C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/5013054101) | 2026-11-01 |
