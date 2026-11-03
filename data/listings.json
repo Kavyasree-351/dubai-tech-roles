@@ -1,5 +1,41 @@
 [
   {
+    "job_id": "gh-binance-5007086101",
+    "company": "Binance",
+    "role": "Full Stack Engineer (Web,Frontend Oriented) — AI Facial Recognition, Identity & Security",
+    "location": "Australia; Hong Kong; New Zealand; Singapore; Taiwan; United Arab Emirates",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5007086101",
+    "date_posted": "2026-11-03",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "sr-DeliveryHero-744000159382315",
+    "company": "Delivery Hero",
+    "role": "Software Engineer l - Backend",
+    "location": "Dubai, Dubai, ae",
+    "apply_url": "https://jobs.smartrecruiters.com/DeliveryHero/744000159382315",
+    "date_posted": "2026-11-03",
+    "source": "smartrecruiters"
+  },
+  {
+    "job_id": "sr-DeliveryHero-744000159378779",
+    "company": "Delivery Hero",
+    "role": "Senior Software Engineer - Backend",
+    "location": "Dubai, Dubai, ae",
+    "apply_url": "https://jobs.smartrecruiters.com/DeliveryHero/744000159378779",
+    "date_posted": "2026-11-03",
+    "source": "smartrecruiters"
+  },
+  {
+    "job_id": "sr-DeliveryHero-744000159376699",
+    "company": "Delivery Hero",
+    "role": "Software Engineer ll - Backend",
+    "location": "Dubai, Dubai, ae",
+    "apply_url": "https://jobs.smartrecruiters.com/DeliveryHero/744000159376699",
+    "date_posted": "2026-11-03",
+    "source": "smartrecruiters"
+  },
+  {
     "job_id": "ashby-leantech-3e9d10c4-fd9c-4cc3-9fee-bfe6c15c76f0",
     "company": "Lean Technologies",
     "role": "Senior Software Engineer",
@@ -95,15 +131,6 @@
     "role": "Backend Architect, Binance Pay & Card",
     "location": "Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates",
     "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002465101",
-    "date_posted": "2026-10-30",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-binance-5007086101",
-    "company": "Binance",
-    "role": "Full Stack Engineer (Frontend Oriented) — Identity & Security",
-    "location": "Hong Kong; Singapore; Taiwan; United Arab Emirates",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5007086101",
     "date_posted": "2026-10-30",
     "source": "greenhouse"
   },
