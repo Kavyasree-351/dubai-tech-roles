@@ -6,7 +6,7 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Roles-33-blue?style=flat-square&logo=target)](data/listings.json)
+[![Active Roles](https://img.shields.io/badge/Active_Roles-34-blue?style=flat-square&logo=target)](data/listings.json)
 [![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-11-04-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
@@ -25,7 +25,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Active Tech Roles** | `33` verified positions |
+| **Total Active Tech Roles** | `34` verified positions |
 | **Last Synchronized** | `2026-11-04` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
@@ -39,6 +39,7 @@
 
 | Company | Role | Location | Apply Link | Date Posted |
 | :--- | :--- | :--- | :--- | :--- |
+| **Delivery Hero** | Engineering Manager - Applied AI | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159571965) | 2026-11-04 |
 | **Binance** | Full Stack Engineer (Web,Frontend Oriented) — AI Facial Recognition, Identity & Security | Australia; Hong Kong; New Zealand; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5007086101) | 2026-11-03 |
 | **Delivery Hero** | Software Engineer l - Backend | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159382315) | 2026-11-03 |
 | **Delivery Hero** | Senior Software Engineer - Backend | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159378779) | 2026-11-03 |
