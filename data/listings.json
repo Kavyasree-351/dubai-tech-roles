@@ -1,5 +1,32 @@
 [
   {
+    "job_id": "gh-binance-5007086101",
+    "company": "Binance",
+    "role": "Full Stack Engineer (Web,Frontend Oriented) — AI Facial Recognition, Identity & Security",
+    "location": "Australia; Hong Kong; New Zealand; Singapore; Taiwan; United Arab Emirates",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5007086101",
+    "date_posted": "2026-11-05",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-binance-5011782101",
+    "company": "Binance",
+    "role": "Senior Risk Strategist, Market Manipulation (Trading Risk)",
+    "location": "Australia; Hong Kong; Singapore; United Arab Emirates",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5011782101",
+    "date_posted": "2026-11-05",
+    "source": "greenhouse"
+  },
+  {
+    "job_id": "gh-binance-5002663101",
+    "company": "Binance",
+    "role": "DevOps Engineer, Blockchain Infra (Fully Remote)",
+    "location": "Europe; United Arab Emirates; United Kingdom",
+    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002663101",
+    "date_posted": "2026-11-05",
+    "source": "greenhouse"
+  },
+  {
     "job_id": "sr-DeliveryHero-744000159571965",
     "company": "Delivery Hero",
     "role": "Engineering Manager - Applied AI",
@@ -7,15 +34,6 @@
     "apply_url": "https://jobs.smartrecruiters.com/DeliveryHero/744000159571965",
     "date_posted": "2026-11-04",
     "source": "smartrecruiters"
-  },
-  {
-    "job_id": "gh-binance-5007086101",
-    "company": "Binance",
-    "role": "Full Stack Engineer (Web,Frontend Oriented) — AI Facial Recognition, Identity & Security",
-    "location": "Australia; Hong Kong; New Zealand; Singapore; Taiwan; United Arab Emirates",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5007086101",
-    "date_posted": "2026-11-03",
-    "source": "greenhouse"
   },
   {
     "job_id": "sr-DeliveryHero-744000159382315",
@@ -153,29 +171,11 @@
     "source": "greenhouse"
   },
   {
-    "job_id": "gh-binance-5011782101",
-    "company": "Binance",
-    "role": "Senior Risk Strategist, Market Manipulation (Trading Risk)",
-    "location": "Australia; Hong Kong; Singapore; United Arab Emirates",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5011782101",
-    "date_posted": "2026-10-30",
-    "source": "greenhouse"
-  },
-  {
     "job_id": "gh-binance-5002258101",
     "company": "Binance",
     "role": "Binance Accelerator Program - Data Scientist, Analytics",
     "location": "Australia; Hong Kong; Singapore; Taiwan; United Arab Emirates",
     "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002258101",
-    "date_posted": "2026-10-30",
-    "source": "greenhouse"
-  },
-  {
-    "job_id": "gh-binance-5002663101",
-    "company": "Binance",
-    "role": "DevOps Engineer, Blockchain Infra (Fully Remote)",
-    "location": "Europe; United Arab Emirates; United Kingdom",
-    "apply_url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002663101",
     "date_posted": "2026-10-30",
     "source": "greenhouse"
   },
