@@ -51,7 +51,7 @@
 | **Delivery Hero** | Senior Software Engineer - Backend | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159378779) | 2026-11-03 |
 | **Delivery Hero** | Software Engineer ll - Backend | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159376699) | 2026-11-03 |
 | **Rain** | Senior Security Engineer | Remote | [Apply ↗](https://jobs.ashbyhq.com/rain/6e303e8c-9d97-485a-9676-e0471e4bdc70) | 2026-11-03 |
-| **Lean Technologies** | Senior Software Engineer | Dubai, United Arab Emirates | [Apply ↗](https://jobs.ashbyhq.com/leantech/3e9d10c4-fd9c-4cc3-9fee-bfe6c15c76f0) | 2026-11-02 |
+| **Lean Technologies** | Senior Software Engineer | Dubai, United Arab Emirates | [Apply ↗](https://jobs.ashbyhq.com/LeanTech/3e9d10c4-fd9c-4cc3-9fee-bfe6c15c76f0) | 2026-11-02 |
 | **Bybit** | Principal Backend Development Engineer(C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996350101) | 2026-11-01 |
 | **Bybit** | Principal Backend Development Engineer (C++) | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/5013054101) | 2026-11-01 |
 | **Bybit** | Lead Backend Engineer, Trading Risk | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4996982101) | 2026-11-01 |
