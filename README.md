@@ -6,7 +6,7 @@
 
 [![Automated Scraper](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/fetch_jobs.yml)
 [![README Builder](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml/badge.svg?branch=main)](https://github.com/Kavyasree-351/dubai-tech-roles/actions/workflows/generate_readme.yml)
-[![Active Roles](https://img.shields.io/badge/Active_Roles-35-blue?style=flat-square&logo=target)](data/listings.json)
+[![Active Roles](https://img.shields.io/badge/Active_Roles-37-blue?style=flat-square&logo=target)](data/listings.json)
 [![Internships](https://img.shields.io/badge/Internships-Early_Grads_Directory-purple?style=flat-square&logo=google-classroom)](INTERNSHIPS.md)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026-11-09-brightgreen?style=flat-square&logo=clock)](data/listings.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
@@ -25,7 +25,7 @@
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Active Tech Roles** | `35` verified positions |
+| **Total Active Tech Roles** | `37` verified positions |
 | **Last Synchronized** | `2026-11-09` |
 | **Monitored ATS Endpoints** | Greenhouse, Lever, SmartRecruiters + Community PRs |
 | **Primary Hubs** | Dubai (DIFC, Internet City, DSO), Abu Dhabi (Hub71), UAE Remote |
@@ -39,6 +39,8 @@
 
 | Company | Role | Location | Apply Link | Date Posted |
 | :--- | :--- | :--- | :--- | :--- |
+| **Bybit** | (Principal) Backend Development Engineer | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/5015081101) | 2026-11-09 |
+| **Lean Technologies** | Software Engineering Manager | Dubai, United Arab Emirates | [Apply ↗](https://jobs.ashbyhq.com/LeanTech/3a4a08a0-5d53-4312-9214-8c3fa695b67d) | 2026-11-09 |
 | **Binance** | Full Stack Engineer (Web,Frontend Oriented) — AI Facial Recognition, Identity & Security | Australia; Hong Kong; New Zealand; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5007086101) | 2026-11-06 |
 | **Binance** | Senior Risk Strategist, Market Manipulation (Trading Risk) | Australia; Hong Kong; Singapore; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5011782101) | 2026-11-05 |
 | **Binance** | DevOps Engineer, Blockchain Infra (Fully Remote) | Europe; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002663101) | 2026-11-05 |
