@@ -41,12 +41,12 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **Bybit** | (Principal) Backend Development Engineer | Abu Dhabi, UAE; Kuala Lumpur, Malaysia | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/5015081101) | 2026-11-09 |
 | **Lean Technologies** | Software Engineering Manager | Dubai, United Arab Emirates | [Apply ↗](https://jobs.ashbyhq.com/LeanTech/3a4a08a0-5d53-4312-9214-8c3fa695b67d) | 2026-11-09 |
+| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002) | 2026-11-09 |
+| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002) | 2026-11-09 |
 | **Binance** | Full Stack Engineer (Web,Frontend Oriented) — AI Facial Recognition, Identity & Security | Australia; Hong Kong; New Zealand; Singapore; Taiwan; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5007086101) | 2026-11-06 |
 | **Binance** | Senior Risk Strategist, Market Manipulation (Trading Risk) | Australia; Hong Kong; Singapore; United Arab Emirates | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5011782101) | 2026-11-05 |
 | **Binance** | DevOps Engineer, Blockchain Infra (Fully Remote) | Europe; United Arab Emirates; United Kingdom | [Apply ↗](https://job-boards.eu.greenhouse.io/binance/jobs/5002663101) | 2026-11-05 |
 | **Bybit** | Senior Product Manager – Trading & Onchain | Abu Dhabi, UAE | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/4968567101) | 2026-11-05 |
-| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002) | 2026-11-05 |
-| **Point72** | Cubist Quantitative Researcher | Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo | [Apply ↗](https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002) | 2026-11-05 |
 | **Bybit** | Trading Risk Control Lead- Regulated Risk | Abu Dhabi, UAE | [Apply ↗](https://job-boards.eu.greenhouse.io/bybit/jobs/5024527101) | 2026-11-05 |
 | **Delivery Hero** | Engineering Manager - Applied AI | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159571965) | 2026-11-04 |
 | **Delivery Hero** | Software Engineer l - Backend | Dubai, Dubai, ae | [Apply ↗](https://jobs.smartrecruiters.com/DeliveryHero/744000159382315) | 2026-11-03 |
